@@ -15,7 +15,7 @@ declare global {
 }
 
 const code = (): void => {
-	globalThis.__onThemeChange = function (theme: HeliosThemes): void {}
+	globalThis.__onThemeChange = function (_theme: HeliosThemes): void {}
 
 	const setTheme = (newTheme: HeliosThemes): void => {
 		globalThis.__theme = newTheme

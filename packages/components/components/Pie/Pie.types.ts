@@ -1,4 +1,4 @@
-import type { HeliosColors, HeliosAttributeMeta } from "../.."
+import type { HeliosColors } from "../.."
 
 export interface PieItem {
 	name?: string

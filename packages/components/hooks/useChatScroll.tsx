@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, type RefObject } from "react"
 
-export const useChatScroll = (dependencies: Array<unknown>): RefObject<HTMLDivElement> => {
+export const useChatScroll = (dependencies: Array<unknown>): RefObject<HTMLDivElement | null> => {
 	const ref = useRef<HTMLDivElement | null>(null)
 
 	useEffect(() => {

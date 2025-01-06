@@ -1,5 +1,5 @@
 import type { ChangeEvent } from "react"
-import type { HeliosIntentionType, HeliosAttributeMeta } from "../.."
+import type { HeliosIntentionType } from "../.."
 
 export interface RadioProps {
 	intent: HeliosIntentionType

@@ -1,5 +1,5 @@
 import { it, describe, expect } from "vitest"
-import { _getFontWeight, getTypographyUtility } from "./Text.utils"
+import { _getFontWeight } from "./Text.utils"
 
 describe("typography", () => {
 	describe("_getFontWeight", () => {

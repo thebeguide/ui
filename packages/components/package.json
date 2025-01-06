@@ -1,6 +1,6 @@
 {
 	"name": "@heliosgraphics/ui",
-	"version": "1.8.5",
+	"version": "1.8.6",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"private": false,
@@ -41,10 +41,10 @@
 	},
 	"devDependencies": {
 		"@testing-library/react": "^16.1.0",
-		"@types/node": "^22.10.2",
+		"@types/node": "^22.10.5",
 		"@types/react": "^19.0.2",
 		"@types/react-dom": "^19.0.2",
-		"@typescript-eslint/eslint-plugin": "^8.18.2",
+		"@typescript-eslint/eslint-plugin": "^8.19.0",
 		"@vitejs/plugin-react": "^4.3.4",
 		"@vitest/coverage-v8": "^2.1.8",
 		"eslint": "^9.17.0",
@@ -54,7 +54,7 @@
 		"next": "^15.1.3",
 		"prettier": "^3.4.2",
 		"typescript": "^5.7.2",
-		"vite": "^6.0.6",
+		"vite": "^6.0.7",
 		"vitest": "^2.1.8"
 	}
 }

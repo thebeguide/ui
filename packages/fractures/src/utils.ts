@@ -25,7 +25,7 @@ export const writeFile = (openFolder: string, contents: string): void => {
 }
 
 // gets the file statistics
-export const getStats = (folder: string, fileName: string, content: string) => {
+export const getStats = (folder: string, fileName: string, _content: string) => {
 	fs.stat(folder, (error: any, stats: any) => {
 		if (error) return console.log(`File doesn't exist.`)
 

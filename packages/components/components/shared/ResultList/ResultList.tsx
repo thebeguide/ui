@@ -1,7 +1,7 @@
 import { getClasses } from "@heliosgraphics/utils/classnames"
 import { Checkbox, Flex, Icon, Text } from "../../.."
 import styles from "./ResultList.module.css"
-import { forwardRef, type FC } from "react"
+import { forwardRef } from "react"
 import type { ResultListProps } from "./ResultList.types"
 
 export const ResultList = forwardRef<HTMLOListElement, ResultListProps>(({ items, isHidden }, ref) => {

@@ -1,4 +1,4 @@
-import { useContext, useId } from "react"
+import { useId } from "react"
 import styles from "./Dot.module.css"
 import type { DotProps } from "./Dot.types"
 import type { FC } from "react"

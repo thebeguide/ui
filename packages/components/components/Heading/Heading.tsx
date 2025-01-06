@@ -55,4 +55,6 @@ export const Heading: FC<HeadingProps> = (props) => {
 		default:
 			null
 	}
+
+	return null
 }
