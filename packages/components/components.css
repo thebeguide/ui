@@ -239,10 +239,10 @@
 	--ui-border: hsl(var(--gray-hue), var(--gray-saturation), 20%);
 	--ui-border-active: hsl(var(--gray-hue), var(--gray-saturation), 35%);
 
-	--ui-bg: hsl(var(--gray-hue), var(--gray-saturation), 4%);
-	--ui-bg-action: hsl(var(--gray-hue), var(--gray-saturation), 8%);
-	--ui-bg-soft: hsl(var(--gray-hue), var(--gray-saturation), 6%);
-	--ui-bg-action-hover: hsl(var(--gray-hue), var(--gray-saturation), 10%);
+	--ui-bg: hsl(var(--gray-hue), var(--gray-saturation), 8%);
+	--ui-bg-action: hsl(var(--gray-hue), var(--gray-saturation), 6%);
+	--ui-bg-soft: hsl(var(--gray-hue), var(--gray-saturation), 4%);
+	--ui-bg-action-hover: hsl(var(--gray-hue), var(--gray-saturation), 12%);
 	--ui-bg-action-active: hsl(var(--gray-hue), var(--gray-saturation), 16%);
 	--ui-bg-disabled: hsl(var(--gray-hue), var(--gray-saturation), 16%);
 	--ui-bg-glass-1: hsla(var(--gray-hue), var(--gray-saturation), 8%, 0.8);
