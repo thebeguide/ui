@@ -1,7 +1,7 @@
 type FracturesPrimitive = string | number | boolean | null | undefined | bigint | symbol
 type FracturesComparable = FracturesPrimitive | object | Array<unknown> | Set<unknown> | Map<unknown, unknown>
 
-export const _getMapsEqual = <K, V>(
+export const _getAreMapsEqual = <K, V>(
 	mapA: Map<K, V>,
 	mapB: Map<K, V>,
 	seen = new WeakMap<object, object>(),
@@ -14,17 +14,17 @@ export const _getMapsEqual = <K, V>(
 
 	return entriesA.every(
 		([key, value]) =>
-			entriesB.has(key) && _getEqual(value as FracturesComparable, entriesB.get(key) as FracturesComparable, seen),
+			entriesB.has(key) && _getIsEqual(value as FracturesComparable, entriesB.get(key) as FracturesComparable, seen),
 	)
 }
 
-export const getDatesEqual = (a: Date, b: Date): boolean => a.getTime() === b.getTime()
-export const getRegExpsEqual = (a: RegExp, b: RegExp): boolean => a.toString() === b.toString()
-export const getErrorsEqual = (a: Error, b: Error): boolean =>
+export const getAreDatesEqual = (a: Date, b: Date): boolean => a.getTime() === b.getTime()
+export const getAreRegExpsEqual = (a: RegExp, b: RegExp): boolean => a.toString() === b.toString()
+export const getAreErrorsEqual = (a: Error, b: Error): boolean =>
 	a.message === b.message && a.name === b.name && a.stack === b.stack
-export const getBuffersEqual = (a: Buffer, b: Buffer): boolean => a.length === b.length && Buffer.compare(a, b) === 0
+export const getAreBuffersEqual = (a: Buffer, b: Buffer): boolean => a.length === b.length && Buffer.compare(a, b) === 0
 
-export const getSetsEqual = <T>(setA: Set<T>, setB: Set<T>): boolean => {
+export const getAreSetsEqual = <T>(setA: Set<T>, setB: Set<T>): boolean => {
 	if (setA.size !== setB.size) return false
 	if (setA === setB) return true
 	if (setA.size === 0) return true
@@ -37,7 +37,7 @@ export const getSetsEqual = <T>(setA: Set<T>, setB: Set<T>): boolean => {
 		let foundMatch = false
 
 		for (let j = 0; j < arrB.length; j++) {
-			if (!matched[j] && getEqual((arrA as any)[i], arrB[j])) {
+			if (!matched[j] && _getIsEqual((arrA as any)[i], arrB[j])) {
 				matched[j] = true
 				foundMatch = true
 				break
@@ -50,7 +50,11 @@ export const getSetsEqual = <T>(setA: Set<T>, setB: Set<T>): boolean => {
 	return true
 }
 
-export const _getEqual = <T extends FracturesComparable>(a: T, b: T, seen = new WeakMap<object, object>()): boolean => {
+export const _getIsEqual = <T extends FracturesComparable>(
+	a: T,
+	b: T,
+	seen = new WeakMap<object, object>(),
+): boolean => {
 	if (a === b) return true
 	if (a === null || b === null) return a === b
 
@@ -65,7 +69,7 @@ export const _getEqual = <T extends FracturesComparable>(a: T, b: T, seen = new 
 	if (Array.isArray(a) && Array.isArray(b)) {
 		if (a.length !== b.length) return false
 
-		return a.every((val, idx) => _getEqual(val, b[idx], seen))
+		return a.every((val, idx) => _getIsEqual(val, b[idx], seen))
 	}
 
 	if (Object.is(a, b)) return true
@@ -85,17 +89,17 @@ export const _getEqual = <T extends FracturesComparable>(a: T, b: T, seen = new 
 		if (a.length !== b.length) return false
 
 		for (let i = 0; i < a.length; i++) {
-			if (!_getEqual(a[i], b[i], seen)) return false
+			if (!_getIsEqual(a[i], b[i], seen)) return false
 		}
 		return true
 	}
 
-	if (a instanceof Map && b instanceof Map) return _getMapsEqual(a, b, seen)
-	if (a instanceof Set && b instanceof Set) return getSetsEqual(a, b)
-	if (a instanceof Date && b instanceof Date) return getDatesEqual(a, b)
-	if (a instanceof Error && b instanceof Error) return getErrorsEqual(a, b)
-	if (a instanceof RegExp && b instanceof RegExp) return getRegExpsEqual(a, b)
-	if (Buffer.isBuffer(a) && Buffer.isBuffer(b)) return getBuffersEqual(a, b)
+	if (a instanceof Map && b instanceof Map) return _getAreMapsEqual(a, b, seen)
+	if (a instanceof Set && b instanceof Set) return getAreSetsEqual(a, b)
+	if (a instanceof Date && b instanceof Date) return getAreDatesEqual(a, b)
+	if (a instanceof Error && b instanceof Error) return getAreErrorsEqual(a, b)
+	if (a instanceof RegExp && b instanceof RegExp) return getAreRegExpsEqual(a, b)
+	if (Buffer.isBuffer(a) && Buffer.isBuffer(b)) return getAreBuffersEqual(a, b)
 
 	const keysA = [...Object.keys(a as object), ...Object.getOwnPropertySymbols(a as object)]
 	const keysB = [...Object.keys(b as object), ...Object.getOwnPropertySymbols(b as object)]
@@ -103,14 +107,14 @@ export const _getEqual = <T extends FracturesComparable>(a: T, b: T, seen = new 
 	if (keysA.length !== keysB.length) return false
 
 	return keysA.every(
-		(key) => Object.prototype.hasOwnProperty.call(b, key) && _getEqual((a as any)[key], (b as any)[key], seen),
+		(key) => Object.prototype.hasOwnProperty.call(b, key) && _getIsEqual((a as any)[key], (b as any)[key], seen),
 	)
 }
 
-export const getEqual = <T extends FracturesComparable>(a: T, b: T): boolean => {
-	return _getEqual(a, b)
+export const getIsEqual = <T extends FracturesComparable>(a: T, b: T): boolean => {
+	return _getIsEqual(a, b)
 }
 
-export const getMapsEqual = <T extends FracturesComparable>(a: T, b: T): boolean => {
-	return _getMapsEqual(a as Map<unknown, unknown>, b as Map<unknown, unknown>)
+export const getAreMapsEqual = <T extends FracturesComparable>(a: T, b: T): boolean => {
+	return _getAreMapsEqual(a as Map<unknown, unknown>, b as Map<unknown, unknown>)
 }

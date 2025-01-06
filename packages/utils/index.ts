@@ -1,19 +1,18 @@
-export { compareObjects } from "./objects"
-export { copyValue } from "./clipboard"
-export { debounce } from "./debounce"
 export { getClasses } from "./classnames"
-export { getSlug } from "./slug"
+export { copyValue } from "./clipboard"
 export { hexToRgb, rgbToHex } from "./colors"
-export { isUUID, getUUID } from "./uuid"
+export { debounce } from "./debounce"
+export {
+	getIsEqual,
+	getAreMapsEqual,
+	getAreSetsEqual,
+	getAreDatesEqual,
+	getAreErrorsEqual,
+	getAreRegExpsEqual,
+	getAreBuffersEqual,
+} from "./equals"
+export { getSlug } from "./slug"
 export { sanitizeText, removeMarkdown, middleEllipsis, removeNewlines } from "./strings"
 export { throttle } from "./throttle"
+export { isUUID, getUUID } from "./uuid"
 export { validateUrl, validateEmail } from "./validations"
-export {
-	getEqual,
-	getMapsEqual,
-	getSetsEqual,
-	getDatesEqual,
-	getErrorsEqual,
-	getRegExpsEqual,
-	getBuffersEqual,
-} from "./equals"

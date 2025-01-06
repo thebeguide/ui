@@ -1,5 +1,5 @@
 import benchmark from "benchmark"
-import { getEqual } from "../utils/equals"
+import { getIsEqual } from "../utils/equals"
 import _ from "lodash"
 import { MOCK_ARRAY_OBJECTS, MOCK_LARGE_OBJECTS, MOCK_NESTED_OBJECTS, MOCK_SIMPLE_OBJECTS } from "./__mocks__/objects"
 
@@ -44,31 +44,31 @@ const printCurrentResults = () => {
 
 suite
 	.add("Simple Objects - Identical (Fractures)", () => {
-		getEqual(MOCK_SIMPLE_OBJECTS.first, MOCK_SIMPLE_OBJECTS.second)
+		getIsEqual(MOCK_SIMPLE_OBJECTS.first, MOCK_SIMPLE_OBJECTS.second)
 	})
 	.add("Simple Objects - Identical (Lodash)", () => {
 		_.isEqual(MOCK_SIMPLE_OBJECTS.first, MOCK_SIMPLE_OBJECTS.second)
 	})
 	.add("Simple Objects - Different (Fractures)", () => {
-		getEqual(MOCK_SIMPLE_OBJECTS.first, MOCK_SIMPLE_OBJECTS.third)
+		getIsEqual(MOCK_SIMPLE_OBJECTS.first, MOCK_SIMPLE_OBJECTS.third)
 	})
 	.add("Simple Objects - Different (Lodash)", () => {
 		_.isEqual(MOCK_SIMPLE_OBJECTS.first, MOCK_SIMPLE_OBJECTS.third)
 	})
 	.add("Nested Objects (Fractures)", () => {
-		getEqual(MOCK_NESTED_OBJECTS.first, MOCK_NESTED_OBJECTS.second)
+		getIsEqual(MOCK_NESTED_OBJECTS.first, MOCK_NESTED_OBJECTS.second)
 	})
 	.add("Nested Objects (Lodash)", () => {
 		_.isEqual(MOCK_NESTED_OBJECTS.first, MOCK_NESTED_OBJECTS.second)
 	})
 	.add("Array Objects (Fractures)", () => {
-		getEqual(MOCK_ARRAY_OBJECTS.first, MOCK_ARRAY_OBJECTS.second)
+		getIsEqual(MOCK_ARRAY_OBJECTS.first, MOCK_ARRAY_OBJECTS.second)
 	})
 	.add("Array Objects (Lodash)", () => {
 		_.isEqual(MOCK_ARRAY_OBJECTS.first, MOCK_ARRAY_OBJECTS.second)
 	})
 	.add("Large Objects (Fractures)", () => {
-		getEqual(MOCK_LARGE_OBJECTS.first, MOCK_LARGE_OBJECTS.second)
+		getIsEqual(MOCK_LARGE_OBJECTS.first, MOCK_LARGE_OBJECTS.second)
 	})
 	.add("Large Objects (Lodash)", () => {
 		_.isEqual(MOCK_LARGE_OBJECTS.first, MOCK_LARGE_OBJECTS.second)
