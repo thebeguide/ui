@@ -21,8 +21,8 @@
 		"@figma-export/cli": "^6.0.2",
 		"@figma-export/output-components-as-svg": "^6.0.1",
 		"@svgr/cli": "^8.1.0",
-		"@types/node": "^22.13.1",
-		"prettier": "^3.4.2",
+		"@types/node": "^22.13.5",
+		"prettier": "^3.5.2",
 		"svgo": "^3.3.2",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.7.3"
