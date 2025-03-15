@@ -57,7 +57,7 @@
 	pointer-events: none;
 }
 
-.dropdown__navActive {
+.dropdown__nav.dropdown__navActive {
 	opacity: 1;
 
 	transform: translateY(0) !important;
