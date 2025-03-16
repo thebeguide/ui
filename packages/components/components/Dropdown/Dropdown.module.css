@@ -58,7 +58,7 @@
 }
 
 .dropdown__nav.dropdown__navActive {
-	opacity: 1;
+	opacity: 1 !important;
 
 	transform: translateY(0) !important;
 
