@@ -1,3 +1,18 @@
+.tooltipContainer {
+  position: relative;
+
+  display: inline-block;
+}
+
 .tooltip {
-	border: 1px solid red;
+  position: fixed;
+  z-index: 10;
+
+  max-width: 320px;
+  padding: 8px;
+
+  background-color: var(--ui-bg);
+  border: 0;
+  color: var(--ui-text-primary);
+  border-radius: var(--radius-small);
 }
