@@ -1,5 +1,5 @@
-import { HeliosChildrenType } from "../../../.."
+import { ReactNode } from "react"
 
 export interface TooltipContentProps {
-	children: HeliosChildrenType
+	children: ReactNode
 }

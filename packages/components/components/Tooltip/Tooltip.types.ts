@@ -1,4 +1,6 @@
 import type { FC, ReactElement, ReactNode, RefObject } from "react"
+import type { TooltipContentProps } from "./components/TooltipContent/TooltipContent.types"
+import type { TooltipTriggerProps } from "./components/TooltipTrigger/TooltipTrigger.types"
 
 export interface TooltipProps {
 	children: ReactNode
@@ -12,10 +14,6 @@ export interface TooltipProps {
 		| "top-left"
 		| "top-right"
 	isVisible?: boolean
-}
-
-export interface TooltipTriggerProps {
-	children: ReactNode
 }
 
 export interface TooltipContextType {

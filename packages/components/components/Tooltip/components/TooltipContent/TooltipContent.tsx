@@ -1,6 +1,7 @@
 import { Text } from "../../../.."
-import type { FC } from "react"
 import { useTooltipContext } from "../../Tooltip.utils"
+import type { FC } from "react"
+import type { TooltipContentProps } from "./TooltipContent.types"
 
 export const TooltipContent: FC<TooltipContentProps> = ({ children }) => {
 	const { popoverRef, tooltipClasses } = useTooltipContext()

@@ -1,4 +1,4 @@
-import { TooltipTriggerProps } from "components/Tooltip/Tooltip.types"
+import { TooltipTriggerProps } from "./TooltipTrigger.types"
 import { useTooltipContext } from "../../Tooltip.utils"
 import type { FC } from "react"
 
