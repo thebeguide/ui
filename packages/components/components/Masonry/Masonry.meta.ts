@@ -23,4 +23,8 @@ export const meta: HeliosAttributeMeta<MasonryProps> = {
 	gap: {
 		type: "[number, number, number]",
 	},
+	useBalancedLayout: {
+		type: "boolean",
+		isOptional: true,
+	},
 }
