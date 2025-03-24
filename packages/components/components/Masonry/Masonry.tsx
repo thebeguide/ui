@@ -4,7 +4,7 @@ import { Masonry as MasonryPlock } from "react-plock/dist/index.es"
 import { Children, type ReactElement, type FC } from "react"
 import type { MasonryProps } from "./Masonry.types"
 
-export const Masonry: FC<MasonryProps> = ({ children, columns, gap, brakepoints }) => {
+export const Masonry: FC<MasonryProps> = ({ children, columns, gap, brakepoints, useBalancedLayout }) => {
 	if (!children) return null
 
 	const mappedChildren: Array<ReactElement> | null | undefined = Children.map(children, (child) => (
@@ -19,6 +19,7 @@ export const Masonry: FC<MasonryProps> = ({ children, columns, gap, brakepoints 
 				columns: columns,
 				gap: gap,
 				media: brakepoints,
+				useBalancedLayout: useBalancedLayout,
 			}}
 		/>
 	)

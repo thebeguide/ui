@@ -5,4 +5,5 @@ export interface MasonryProps {
 	columns: [number, number, number]
 	gap: [number, number, number]
 	brakepoints: [number, number, number]
+	useBalancedLayout?: boolean
 }
