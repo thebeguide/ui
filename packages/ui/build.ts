@@ -6,7 +6,6 @@ const setup = async (): Promise<void> => {
 	await rm("dist", { recursive: true, force: true })
 	await mkdir("dist", { recursive: true })
 
-	// Build JS/TS
 	await build({
 		entryPoints: ["index.ts"],
 		outdir: "dist",
@@ -18,6 +17,7 @@ const setup = async (): Promise<void> => {
 		external: [
 			"react",
 			"react-dom",
+			"react/jsx-runtime",
 			"dayjs",
 			"markdown-it",
 			"highlight.js",
@@ -29,15 +29,15 @@ const setup = async (): Promise<void> => {
 		minify: true,
 		treeShaking: true,
 		allowOverwrite: true,
+		jsx: "automatic",
+		preserveSymlinks: true,
 	})
 
-	// Copy and minify CSS
 	await cp("components", "dist/components", {
 		recursive: true,
 		filter: (name) => name.endsWith(".css"),
 	})
 
-	// Minify components.css
 	const css = await readFile("components.css", "utf8")
 	const minifiedCss = await build({
 		stdin: {
@@ -51,7 +51,6 @@ const setup = async (): Promise<void> => {
 
 	await writeFile("dist/components.css", minifiedCss.outputFiles[0].contents)
 
-	// Generate declarations
 	execSync("tsc --declaration --emitDeclarationOnly --outDir dist", {
 		stdio: "inherit",
 		env: { ...process.env, TS_NODE_IGNORE_CSS: "true" },

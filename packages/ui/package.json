@@ -1,6 +1,6 @@
 {
-	"name": "@heliosgraphics/ui",
-	"version": "2.0.0-alpha.1",
+	"name": "@thebeguide/ui",
+	"version": "2.0.0-alpha.2",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"private": false,
@@ -16,12 +16,12 @@
 		"prepare": "bun run build",
 		"prettier:write": "prettier --no-semi --use-tabs --write ./src/**"
 	},
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"dependencies": {
 		"@heliosgraphics/fractures": "^6.3.3",
 		"@heliosgraphics/icons": "^0.1.2",
