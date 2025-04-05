@@ -9,7 +9,7 @@
 	"scripts": {
 		"build:fractures": "bun run --cwd packages/fractures build",
 		"build:icons": "bun run --cwd packages/icons build",
-		"build:ui": "bun run --cwd packages/components build",
+		"build:ui": "bun run --cwd packages/ui build",
 		"prettier:write": "prettier --no-semi --use-tabs --write ./packages/**",
 		"pub:fractures": "cd packages/fractures && bun publish --access public",
 		"pub:icons": "cd packages/icons && bun publish --access public",
@@ -20,7 +20,7 @@
 		"test:coverage": "bun test --coverage",
 		"test:fractures": "bun test --cwd packages/fractures",
 		"test:u": "bun test --update-snapshots",
-		"test:ui": "bun test --cwd packages/components",
+		"test:ui": "bun test --cwd packages/ui",
 		"test:utils": "bun test --cwd packages/utils",
 		"test:watch": "bun test --watch"
 	},
