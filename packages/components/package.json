@@ -48,14 +48,14 @@
 		"@vitejs/plugin-react": "^4.3.4",
 		"@vitest/coverage-v8": "^3.1.1",
 		"esbuild": "latest",
-		"eslint": "^9.23.0",
+		"eslint": "^9.24.0",
 		"eslint-config-prettier": "^10.1.1",
 		"eslint-plugin-prettier": "^5.2.6",
 		"glob": "latest",
 		"jsdom": "^26.0.0",
 		"next": "^15.2.4",
 		"prettier": "^3.5.3",
-		"typescript": "^5.8.2",
+		"typescript": "^5.8.3",
 		"vite": "^6.2.5",
 		"vitest": "^3.1.1"
 	}
