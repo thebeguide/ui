@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"noEmit": false,
+		"outDir": "dist"
+	},
+	"include": [
+		"index.ts",
+		"components/**/*.ts",
+		"components/**/*.tsx",
+		"hooks/**/*.ts",
+		"types/**/*.ts",
+		"constants/**/*.ts"
+	],
+	"exclude": ["**/*.test.*", "**/*.css", "node_modules", "dist"]
+}

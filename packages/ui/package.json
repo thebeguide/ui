@@ -16,16 +16,12 @@
 		"prepare": "bun run build",
 		"prettier:write": "prettier --no-semi --use-tabs --write ./src/**"
 	},
-	"files": [
-		"./components/**/*.*",
-		"./constants/*.*",
-		"./hooks/*.*",
-		"./types/*.*",
-		"./utils/*.*",
-		"globals.d.ts",
-		"components.css",
-		"index.ts"
-	],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
 	"dependencies": {
 		"@heliosgraphics/fractures": "^6.3.3",
 		"@heliosgraphics/icons": "^0.1.2",
