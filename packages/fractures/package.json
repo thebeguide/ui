@@ -1,6 +1,6 @@
 {
-	"name": "@heliosgraphics/fractures",
-	"version": "6.3.3",
+	"name": "@thebeguide/fractures",
+	"version": "7.0.0-alpha.1",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"license": "MIT",
@@ -15,7 +15,6 @@
 	],
 	"scripts": {
 		"prepare": "bun ./src/build.ts",
-		"start": "bun ./src/build.ts",
 		"build": "bun ./src/build.ts",
 		"test": "vitest run --reporter dot"
 	},

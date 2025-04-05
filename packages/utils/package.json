@@ -1,6 +1,6 @@
 {
-	"name": "@heliosgraphics/utils",
-	"version": "5.3.14",
+	"name": "@thebeguide/utils",
+	"version": "6.0.0-alpha.1",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"license": "MIT",

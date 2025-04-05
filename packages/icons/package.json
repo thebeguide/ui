@@ -1,6 +1,6 @@
 {
-	"name": "@heliosgraphics/icons",
-	"version": "0.1.2",
+	"name": "@thebeguide/icons",
+	"version": "1.0.0-alpha.1",
 	"author": "03b8 <03b8@helios.graphics>",
 	"license": "MIT",
 	"private": false,
@@ -10,7 +10,7 @@
 		"meta.ts"
 	],
 	"scripts": {
-		"build": "pnpm run export && pnpm run build:meta && pnpm run build:icons && pnpm run build:tsx",
+		"build": "bun run export && bun run build:meta && bun run build:icons && bun run build:tsx",
 		"build:icons": "svgo -f ./src/icons -o ./out --config=./svgo.config.js",
 		"build:tsx": "npx @svgr/cli --typescript --ext tsx out --out-dir ./react --jsx-runtime 'automatic'",
 		"build:meta": "ts-node -O '{\"module\": \"commonjs\"}' ./build.meta.ts",
@@ -21,7 +21,7 @@
 		"@figma-export/cli": "^6.2.0",
 		"@figma-export/output-components-as-svg": "^6.2.0",
 		"@svgr/cli": "^8.1.0",
-		"@types/node": "^22.13.11",
+		"@types/node": "^22.14.0",
 		"prettier": "^3.5.3",
 		"svgo": "^3.3.2",
 		"ts-node": "^10.9.2",
