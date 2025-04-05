@@ -1,4 +1,4 @@
-import { build } from "esbuild"
+import { build, type BuildOptions, type Loader } from "esbuild"
 import { mkdir, rm, cp, readFile, writeFile } from "fs/promises"
 import { execSync } from "child_process"
 
@@ -6,9 +6,7 @@ const setup = async (): Promise<void> => {
 	await rm("dist", { recursive: true, force: true })
 	await mkdir("dist", { recursive: true })
 
-	await build({
-		entryPoints: ["index.ts"],
-		outdir: "dist",
+	const sharedConfig: BuildOptions = {
 		format: "esm",
 		platform: "browser",
 		target: "esnext",
@@ -25,13 +23,28 @@ const setup = async (): Promise<void> => {
 			"react-plock",
 			"@heliosgraphics/*",
 		],
-		loader: { ".css": "empty" },
+		loader: { ".css": "empty" as Loader },
 		minify: true,
 		treeShaking: true,
 		allowOverwrite: true,
 		jsx: "automatic",
 		preserveSymlinks: true,
-	})
+	}
+
+	const buildConfigs: BuildOptions[] = [
+		{
+			...sharedConfig,
+			entryPoints: ["index.ts"],
+			outdir: "dist",
+		},
+		{
+			...sharedConfig,
+			entryPoints: ["constants/meta.ts"],
+			outdir: "dist",
+		},
+	]
+
+	await Promise.all(buildConfigs.map((config) => build(config)))
 
 	await cp("components", "dist/components", {
 		recursive: true,
