@@ -1,17 +1,17 @@
 {
 	"name": "@thebeguide/ui",
-	"version": "2.0.0-alpha.6",
+	"version": "2.0.0-alpha.7",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"private": false,
 	"description": "Helios User Interface",
 	"main": "./index.ts",
 	"files": [
-		"./components/**/*.*",
-		"./constants/*.*",
-		"./hooks/*.*",
-		"./types/*.*",
-		"./utils/*.*",
+		"components/**/*.*",
+		"constants/*.*",
+		"hooks/*.*",
+		"types/*.*",
+		"utils/*.*",
 		"globals.d.ts",
 		"components.css",
 		"index.ts"
