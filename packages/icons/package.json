@@ -1,6 +1,6 @@
 {
 	"name": "@thebeguide/icons",
-	"version": "1.0.0-alpha.1",
+	"version": "1.0.0-alpha.2",
 	"author": "03b8 <03b8@helios.graphics>",
 	"license": "MIT",
 	"private": false,
@@ -10,6 +10,7 @@
 		"meta.ts"
 	],
 	"scripts": {
+		"prepare": "bun run build",
 		"build": "bun run export && bun run build:meta && bun run build:icons && bun run build:tsx",
 		"build:icons": "svgo -f ./src/icons -o ./out --config=./svgo.config.js",
 		"build:tsx": "npx @svgr/cli --typescript --ext tsx out --out-dir ./react --jsx-runtime 'automatic'",
