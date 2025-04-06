@@ -1,23 +1,20 @@
 {
 	"name": "@thebeguide/ui",
-	"version": "2.0.0-alpha.4",
+	"version": "2.0.0-alpha.5",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"private": false,
 	"description": "Helios User Interface",
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.js",
-			"require": "./dist/index.js"
-		}
-	},
-	"sideEffects": false,
+	"main": "./index.ts",
 	"files": [
-		"dist"
+		"./components/**/*.*",
+		"./constants/*.*",
+		"./hooks/*.*",
+		"./types/*.*",
+		"./utils/*.*",
+		"globals.d.ts",
+		"components.css",
+		"index.ts"
 	],
 	"scripts": {
 		"pub:components": "bun publish --access public",
@@ -26,8 +23,6 @@
 		"test:watch": "NODE_ENV=test vitest",
 		"test:coverage": "NODE_ENV=test vitest run --coverage",
 		"ts:watch": "tsc --noEmit --incremental --watch",
-		"build": "bun run build.ts",
-		"prepare": "bun run build",
 		"prettier:write": "prettier --no-semi --use-tabs --write ./src/**"
 	},
 	"dependencies": {
