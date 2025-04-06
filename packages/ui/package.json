@@ -1,6 +1,6 @@
 {
 	"name": "@thebeguide/ui",
-	"version": "2.0.0-alpha.8",
+	"version": "2.0.0-alpha.9",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"private": false,
@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"@thebeguide/fractures": "7.0.0-alpha.1",
-		"@thebeguide/icons": "1.0.0-alpha.1",
+		"@thebeguide/icons": "1.0.0-alpha.2",
 		"@thebeguide/utils": "6.0.0-alpha.1",
 		"@types/markdown-it": "^14.1.2",
 		"@use-gesture/react": "^10.3.1",
