@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ColumnBaseProps } from "./Column.types"
 
-export const meta: HeliosAttributeMeta<ColumnBaseProps> = {
+export const meta: ThebeAttributeMeta<ColumnBaseProps> = {
 	_patterns: [
 		{
 			id: "ui-column-default",

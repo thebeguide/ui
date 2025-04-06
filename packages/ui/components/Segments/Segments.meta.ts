@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { SegmentsProps } from "./Segments.types"
 
-export const meta: HeliosAttributeMeta<SegmentsProps> = {
+export const meta: ThebeAttributeMeta<SegmentsProps> = {
 	_patterns: [
 		{
 			id: "ui-segments-default",
@@ -16,6 +16,6 @@ export const meta: HeliosAttributeMeta<SegmentsProps> = {
 		isOptional: true,
 	},
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 }

@@ -1,5 +1,5 @@
 import styles from "./Table.module.css"
-import { getClasses } from "@heliosgraphics/utils"
+import { getClasses } from "@thebeguide/utils"
 import type { FC } from "react"
 import type { TableProps } from "./Table.types"
 

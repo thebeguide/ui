@@ -1,4 +1,4 @@
-interface HeliosAttributeItem<T> {
+interface ThebeAttributeItem<T> {
 	alias?: keyof T
 	default?: number | string
 	description?: string
@@ -6,8 +6,8 @@ interface HeliosAttributeItem<T> {
 	type: string
 }
 
-export type HeliosComponentStatusType = "experimental" | "nominal" | "stable" | "internal"
-export type HeliosComponentCategoryType = "core" | "layout" | "content" | "pattern"
+export type ThebeComponentStatusType = "experimental" | "nominal" | "stable" | "internal"
+export type ThebeComponentCategoryType = "core" | "layout" | "content" | "pattern"
 
 export interface Pattern {
 	id: string
@@ -15,10 +15,10 @@ export interface Pattern {
 	content: string
 }
 
-export type HeliosAttributeMeta<T> = Record<keyof T, HeliosAttributeItem<T>> & {
-	_category: HeliosComponentCategoryType
+export type ThebeAttributeMeta<T> = Record<keyof T, ThebeAttributeItem<T>> & {
+	_category: ThebeComponentCategoryType
 	_extends?: Array<string>
 	_patterns: Array<Pattern>
-	_status: HeliosComponentStatusType
+	_status: ThebeComponentStatusType
 	_type?: "composite" | "hoc"
 }

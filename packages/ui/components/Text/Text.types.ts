@@ -1,8 +1,8 @@
 import type { HTMLAttributes } from "react"
-import type { HeliosEmphasisType } from "../.."
+import type { ThebeEmphasisType } from "../.."
 
 export interface TextBaseProps {
-	emphasis?: HeliosEmphasisType
+	emphasis?: ThebeEmphasisType
 	fontFamily?: "sans" | "serif" | "mono"
 	fontStyle?: "italic" | "normal" | "oblique"
 	fontWeight?: "thin" | "extra-light" | "light" | "normal" | "medium" | "semibold" | "bold" | "extra-bold" | "black"

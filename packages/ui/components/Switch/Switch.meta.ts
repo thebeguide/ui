@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { BaseSwitchProps } from "./Switch.types"
 
-export const meta: HeliosAttributeMeta<BaseSwitchProps> = {
+export const meta: ThebeAttributeMeta<BaseSwitchProps> = {
 	_patterns: [
 		{
 			id: "ui-switch-default",

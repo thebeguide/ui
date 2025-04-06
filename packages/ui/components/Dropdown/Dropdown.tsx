@@ -2,12 +2,12 @@
 
 import { useEffect, useState, useRef, cloneElement, Children as ReactChildren, type ReactElement, type FC } from "react"
 import { ANIMATION_FAST } from "../../constants/animations"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { ResultList } from "../shared/ResultList/ResultList"
 import styles from "./Dropdown.module.css"
 import type { MouseEvent } from "react"
 import type { DropdownProps } from "./Dropdown.types"
-import type { HeliosIconType } from "../../types/icons"
+import type { ThebeIconType } from "../../types/icons"
 
 // NOTE @03b8 instead of passing ref, should use https://www.w3.org/TR/css-anchor-position-1/ when ready
 export const Dropdown: FC<DropdownProps> = ({ isHidden, children, items, isDisabled, position = "bottom-left" }) => {
@@ -48,7 +48,7 @@ export const Dropdown: FC<DropdownProps> = ({ isHidden, children, items, isDisab
 		return setTimeout(() => !hoverStateRef.current && setVisible(false), ANIMATION_FAST)
 	}
 
-	const renderChildren = ReactChildren.map(children, (child: ReactElement<any & { icon: HeliosIconType }>) => {
+	const renderChildren = ReactChildren.map(children, (child: ReactElement<any & { icon: ThebeIconType }>) => {
 		const caretProps = {
 			...(child?.props?.icon === "caret-down" && isVisible && { icon: "caret-up" }),
 			...(child?.props?.icon === "chevron-down" && isVisible && { icon: "chevron-up" }),

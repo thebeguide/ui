@@ -1,4 +1,4 @@
-import type { HeliosColors } from "../.."
+import type { ThebeColors } from "../.."
 
 export interface PieItem {
 	name?: string
@@ -6,7 +6,7 @@ export interface PieItem {
 }
 
 export interface PieProps {
-	color: HeliosColors
+	color: ThebeColors
 	data: Array<PieItem>
 	size: number
 }

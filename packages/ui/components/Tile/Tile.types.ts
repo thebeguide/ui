@@ -1,11 +1,11 @@
 import { MouseEventHandler } from "react"
-import type { HeliosIconType, HeliosColors } from "../.."
+import type { ThebeIconType, ThebeColors } from "../.."
 
 export interface TileProps {
-	color: HeliosColors
-	colorAccent?: HeliosColors
-	icon: HeliosIconType
-	iconAccent?: HeliosIconType
+	color: ThebeColors
+	colorAccent?: ThebeColors
+	icon: ThebeIconType
+	iconAccent?: ThebeIconType
 	isRound?: boolean
 	isRounded?: boolean
 	onClick?: MouseEventHandler<HTMLDivElement>

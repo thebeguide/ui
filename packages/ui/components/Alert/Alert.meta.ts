@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { AlertProps } from "./Alert.types"
 
-export const meta: HeliosAttributeMeta<AlertProps> = {
+export const meta: ThebeAttributeMeta<AlertProps> = {
 	_patterns: [
 		{
 			id: "ui-alert-default",
@@ -17,15 +17,15 @@ export const meta: HeliosAttributeMeta<AlertProps> = {
 	_status: "stable",
 	_category: "pattern",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	icon: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 		description: "icon before title",
 		isOptional: true,
 	},
 	intent: {
-		type: "HeliosIntentionType",
+		type: "ThebeIntentionType",
 	},
 	onClose: {
 		type: "Function",

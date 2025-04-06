@@ -1,4 +1,4 @@
-export type HeliosScale =
+export type ThebeScale =
 	| "px"
 	| 0
 	| 1
@@ -23,6 +23,6 @@ export type HeliosScale =
 	| 80
 	| 96
 
-export type HeliosRadius = "none" | "small" | "normal" | "large"
+export type ThebeRadius = "none" | "small" | "normal" | "large"
 
-export type HeliosSizeType = "normal" | "small" | "tiny"
+export type ThebeSizeType = "normal" | "small" | "tiny"

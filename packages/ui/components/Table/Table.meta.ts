@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { TableProps } from "./Table.types"
 
-export const meta: HeliosAttributeMeta<TableProps> = {
+export const meta: ThebeAttributeMeta<TableProps> = {
 	_patterns: [
 		{
 			id: "ui-table-default",
@@ -25,7 +25,7 @@ export const meta: HeliosAttributeMeta<TableProps> = {
 	_status: "nominal",
 	_category: "content",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	hasBorder: {
 		type: "boolean",

@@ -1,4 +1,4 @@
-import type { HeliosScale, HeliosRadius } from "../.."
+import type { ThebeScale, ThebeRadius } from "../.."
 import type { FlexProps } from "./Flex.types"
 // import type { MainProps } from "../Main/Main.types"
 // import type { ColumnProps } from "../Column/Column.types"
@@ -52,7 +52,7 @@ export const getFlexUtility = (props?: FlexProps): string => {
 	if (props.paddingX) flexClasses.add(`px-${props.paddingX}`)
 
 	if (props.className) flexClasses.add(props.className)
-	if (props.withBackground) flexClasses.add("helios-ui-bg")
+	if (props.withBackground) flexClasses.add("thebe-ui-bg")
 
 	return Array.from(flexClasses).join(" ")
 }
@@ -66,7 +66,7 @@ export const getPadding = (paddingValue?: ResponsiveScaleType): string => {
 	if (!isArray) return `p-${paddingValue}`
 
 	for (let index: number = 0; index < 3; index++) {
-		const element = (paddingValue as [HeliosScale, HeliosScale, HeliosScale])[index]
+		const element = (paddingValue as [ThebeScale, ThebeScale, ThebeScale])[index]
 
 		if (index === 0) paddingClasses.add(`mobile:p-${element ?? 0}`)
 		if (index === 1) paddingClasses.add(`tablet:p-${element ?? 0}`)
@@ -85,7 +85,7 @@ export const getRadius = (radiusValue?: ResponsiveRadiusType): string => {
 	if (!isArray) return `radius-${radiusValue}`
 
 	for (let index: number = 0; index < 3; index++) {
-		const element: HeliosRadius = (radiusValue as [HeliosRadius, HeliosRadius, HeliosRadius])[index]
+		const element: ThebeRadius = (radiusValue as [ThebeRadius, ThebeRadius, ThebeRadius])[index]
 
 		if (index === 0 && !!element) radiusClasses.add(`mobile:radius-${element}`)
 		if (index === 1 && !!element) radiusClasses.add(`tablet:radius-${element}`)

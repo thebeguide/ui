@@ -1,7 +1,7 @@
 "use client"
 
 import { useId, type FC } from "react"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { Button, ButtonGroup, Loading, Text, Flex } from "../.."
 import { InputLabel } from "../shared/InputLabel/InputLabel"
 import { ResultList } from "../shared/ResultList/ResultList"

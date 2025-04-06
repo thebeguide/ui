@@ -1,4 +1,4 @@
-import type { HeliosAttributeMeta } from ".."
+import type { ThebeAttributeMeta } from ".."
 import { meta as metaAlert } from "../components/Alert/Alert.meta"
 import { meta as metaBreadcrumb } from "../components/Breadcrumb/Breadcrumb.meta"
 import { meta as metaBrowser } from "../components/Browser/Browser.meta"
@@ -53,7 +53,7 @@ import { meta as metaToggle } from "../components/Toggle/Toggle.meta"
 import { meta as metaTooltip } from "../components/Tooltip/Tooltip.meta"
 import { meta as metaSwitch } from "../components/Switch/Switch.meta"
 
-export const COMPONENTS: Record<string, HeliosAttributeMeta<unknown>> = {
+export const COMPONENTS: Record<string, ThebeAttributeMeta<unknown>> = {
 	Alert: metaAlert,
 	Breadcrumb: metaBreadcrumb,
 	Browser: metaBrowser,

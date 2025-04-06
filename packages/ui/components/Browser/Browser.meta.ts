@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { BrowserProps } from "./Browser.types"
 
-export const meta: HeliosAttributeMeta<BrowserProps> = {
+export const meta: ThebeAttributeMeta<BrowserProps> = {
 	_patterns: [
 		{
 			id: "ui-browser-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<BrowserProps> = {
 	_status: "experimental",
 	_category: "layout",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 		isOptional: true,
 	},
 	height: {

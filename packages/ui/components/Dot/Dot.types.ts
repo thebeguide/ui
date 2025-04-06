@@ -1,7 +1,7 @@
-import type { HeliosColors, HeliosScale } from "../.."
+import type { ThebeColors, ThebeScale } from "../.."
 
 export interface DotProps {
-	color: HeliosColors
-	colorAccent?: HeliosColors
-	size: HeliosScale
+	color: ThebeColors
+	colorAccent?: ThebeColors
+	size: ThebeScale
 }

@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { TabsProps } from "./Tabs.types"
 
-export const meta: HeliosAttributeMeta<TabsProps> = {
+export const meta: ThebeAttributeMeta<TabsProps> = {
 	_patterns: [
 		{
 			id: "ui-tabs-default",

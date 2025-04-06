@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { NavigationBaseProps } from "./Navigation.types"
 
-export const meta: HeliosAttributeMeta<NavigationBaseProps> = {
+export const meta: ThebeAttributeMeta<NavigationBaseProps> = {
 	_patterns: [
 		{
 			id: "ui-navigation-default",

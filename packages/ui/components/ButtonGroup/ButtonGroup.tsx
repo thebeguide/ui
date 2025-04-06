@@ -1,5 +1,5 @@
 import { ButtonGroupProps } from "./ButtonGroup.types"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { Flex } from "../.."
 import styles from "./ButtonGroup.module.css"
 import type { FC } from "react"

@@ -29,7 +29,7 @@ describe("getFlexUtility", () => {
 	it("Generates empty flex without attrs", () => expect(getFlexUtility(MOCK_FLEX)).toEqual(MOCK_FLEX_CLASSES))
 	it("Generates empty flex with undefined", () => expect(getFlexUtility(undefined as any)).toEqual(MOCK_FLEX_CLASSES))
 
-	const MOCK_FLEX_DUPLICATE_CLASSES = `flex flex-center helios-ui-bg`
+	const MOCK_FLEX_DUPLICATE_CLASSES = `flex flex-center thebe-ui-bg`
 	const MOCK_FLEX_DUPLICATE: FlexProps = {
 		children: null,
 		isCentered: true,

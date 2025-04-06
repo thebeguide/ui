@@ -1,7 +1,7 @@
 "use client"
 
 import { useId } from "react"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { Text } from "../.."
 import styles from "./Switch.module.css"
 import type { FC } from "react"

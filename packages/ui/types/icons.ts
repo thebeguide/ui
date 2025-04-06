@@ -1,3 +1,3 @@
-import { meta } from "@heliosgraphics/icons/meta"
+import { meta } from "@thebeguide/icons/meta"
 
-export type HeliosIconType = (typeof meta)[number]
+export type ThebeIconType = (typeof meta)[number]

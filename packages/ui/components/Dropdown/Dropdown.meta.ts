@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { DropdownProps } from "./Dropdown.types"
 
-export const meta: HeliosAttributeMeta<DropdownProps> = {
+export const meta: ThebeAttributeMeta<DropdownProps> = {
 	_patterns: [
 		{
 			id: "ui-dropdown-buttongroup",
@@ -28,7 +28,7 @@ export const meta: HeliosAttributeMeta<DropdownProps> = {
 		isOptional: true,
 	},
 	position: {
-		type: "HeliosPositionType",
+		type: "ThebePositionType",
 		isOptional: true,
 		default: "bottom-left",
 	},

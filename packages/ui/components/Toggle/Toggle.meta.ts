@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { BaseToggleProps } from "./Toggle.types"
 
-export const meta: HeliosAttributeMeta<BaseToggleProps> = {
+export const meta: ThebeAttributeMeta<BaseToggleProps> = {
 	_patterns: [
 		{
 			id: "ui-toggle-default",

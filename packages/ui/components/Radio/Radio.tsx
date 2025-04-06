@@ -1,6 +1,6 @@
 "use client"
 
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import styles from "./Radio.module.css"
 import { Text } from "../.."
 import { type FC, useId } from "react"

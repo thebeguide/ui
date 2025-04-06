@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { SetupProps } from "./Setup.types"
 
-export const meta: HeliosAttributeMeta<SetupProps> = {
+export const meta: ThebeAttributeMeta<SetupProps> = {
 	_patterns: [
 		{
 			id: "ui-setup-default",

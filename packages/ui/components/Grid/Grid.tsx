@@ -1,5 +1,5 @@
 import { GridProps } from "./Grid.types"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import type { FC } from "react"
 
 export const Grid: FC<GridProps> = ({ columns, children }) => {

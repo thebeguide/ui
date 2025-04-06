@@ -1,4 +1,4 @@
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { HRMarkup } from "../HRMarkup/HRMarkup"
 import styles from "./HorizontalSeparator.module.css"
 import type { FC } from "react"

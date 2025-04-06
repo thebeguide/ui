@@ -1,7 +1,7 @@
-import type { HeliosEmphasisType } from "../.."
+import type { ThebeEmphasisType } from "../.."
 
 export interface LoadingProps {
 	className?: string
 	size: 10 | 20 | 40
-	emphasis?: HeliosEmphasisType
+	emphasis?: ThebeEmphasisType
 }

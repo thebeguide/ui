@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ClockProps } from "./Clock.types"
 
-export const meta: HeliosAttributeMeta<ClockProps> = {
+export const meta: ThebeAttributeMeta<ClockProps> = {
 	_patterns: [
 		{
 			id: "ui-clock-default",

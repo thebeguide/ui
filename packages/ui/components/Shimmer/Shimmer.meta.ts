@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ShimmerProps } from "./Shimmer.types"
 
-export const meta: HeliosAttributeMeta<ShimmerProps> = {
+export const meta: ThebeAttributeMeta<ShimmerProps> = {
 	_patterns: [
 		{
 			id: "ui-shimmer-default",

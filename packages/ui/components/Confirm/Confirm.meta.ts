@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ConfirmProps } from "./Confirm.types"
 
-export const meta: HeliosAttributeMeta<ConfirmProps> = {
+export const meta: ThebeAttributeMeta<ConfirmProps> = {
 	_patterns: [
 		{
 			id: "ui-confirm-delete",
@@ -22,11 +22,11 @@ export const meta: HeliosAttributeMeta<ConfirmProps> = {
 		isOptional: true,
 	},
 	icon: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 		isOptional: true,
 	},
 	intent: {
-		type: "HeliosIntentionType",
+		type: "ThebeIntentionType",
 	},
 	isOpen: {
 		type: "boolean",

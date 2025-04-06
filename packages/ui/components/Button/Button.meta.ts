@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ButtonProps } from "./Button.types"
 
-export const meta: HeliosAttributeMeta<ButtonProps> = {
+export const meta: ThebeAttributeMeta<ButtonProps> = {
 	_patterns: [
 		{
 			id: "ui-button-default",
@@ -20,20 +20,20 @@ export const meta: HeliosAttributeMeta<ButtonProps> = {
 		isOptional: true,
 	},
 	icon: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 		isOptional: true,
 	},
 	iconLeft: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 		isOptional: true,
 		alias: "icon",
 	},
 	iconRight: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 		isOptional: true,
 	},
 	intent: {
-		type: "HeliosIntentionType",
+		type: "ThebeIntentionType",
 	},
 	isDisabled: {
 		type: "boolean",
@@ -60,7 +60,7 @@ export const meta: HeliosAttributeMeta<ButtonProps> = {
 		isOptional: true,
 	},
 	onClick: {
-		type: "HeliosOnClickType",
+		type: "ThebeOnClickType",
 		isOptional: true,
 	},
 	size: {

@@ -1,16 +1,16 @@
 "use client"
 
 import { useCallback, useEffect, useState } from "react"
-import type { HeliosThemes } from ".."
+import type { ThebeThemes } from ".."
 
 export const useTheme = () => {
-	const [theme, setTheme] = useState<HeliosThemes | null>(null)
+	const [theme, setTheme] = useState<ThebeThemes | null>(null)
 
 	useEffect(() => {
 		setTheme(getTheme())
 	}, [])
 
-	const getTheme = (): HeliosThemes => (typeof globalThis !== "undefined" ? globalThis.__theme : "light")
+	const getTheme = (): ThebeThemes => (typeof globalThis !== "undefined" ? globalThis.__theme : "light")
 
 	const toggleTheme = useCallback(() => {
 		const currentIsDark = getTheme() === "dark"
@@ -22,7 +22,7 @@ export const useTheme = () => {
 
 		const originalOnThemeChange = globalThis.__onThemeChange
 
-		globalThis.__onThemeChange = (newTheme: HeliosThemes) => {
+		globalThis.__onThemeChange = (newTheme: ThebeThemes) => {
 			originalOnThemeChange?.(newTheme)
 			setTheme(newTheme)
 		}

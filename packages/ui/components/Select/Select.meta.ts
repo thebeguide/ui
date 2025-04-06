@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { SelectProps } from "./Select.types"
 
-export const meta: HeliosAttributeMeta<SelectProps> = {
+export const meta: ThebeAttributeMeta<SelectProps> = {
 	_patterns: [
 		{
 			id: "ui-select-default",

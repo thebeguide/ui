@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { CheckboxProps } from "./Checkbox.types"
 
-export const meta: HeliosAttributeMeta<CheckboxProps> = {
+export const meta: ThebeAttributeMeta<CheckboxProps> = {
 	_patterns: [
 		{
 			id: "ui-checkbox-default",
@@ -22,7 +22,7 @@ export const meta: HeliosAttributeMeta<CheckboxProps> = {
 		isOptional: true,
 	},
 	intent: {
-		type: "HeliosIntentionType",
+		type: "ThebeIntentionType",
 	},
 	isChecked: {
 		type: "boolean",

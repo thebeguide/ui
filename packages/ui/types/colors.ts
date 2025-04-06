@@ -1,4 +1,4 @@
-export type HeliosColors =
+export type ThebeColors =
 	// core
 	| "gray"
 	| "red"
@@ -12,7 +12,7 @@ export type HeliosColors =
 	| "orange"
 	| "purple"
 
-export interface HeliosColorScaleOptions {
+export interface ThebeColorScaleOptions {
 	0?: string
 	25?: string
 	50?: string

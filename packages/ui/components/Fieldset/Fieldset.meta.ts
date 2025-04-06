@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { FieldsetProps } from "./Fieldset.types"
 
-export const meta: HeliosAttributeMeta<FieldsetProps> = {
+export const meta: ThebeAttributeMeta<FieldsetProps> = {
 	_patterns: [
 		{
 			id: "ui-fieldset-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<FieldsetProps> = {
 	_status: "experimental",
 	_category: "core",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	legend: {
 		type: "string",

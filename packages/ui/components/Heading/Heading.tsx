@@ -1,5 +1,5 @@
 import { getTypographyUtility } from "../Text/Text.utils"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { H0 } from "./components/H0/H0"
 import { H1 } from "./components/H1/H1"
 import { H2 } from "./components/H2/H2"

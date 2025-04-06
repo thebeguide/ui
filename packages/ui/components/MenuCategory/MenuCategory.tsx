@@ -2,7 +2,7 @@
 
 import { useState, type FC } from "react"
 import { Button, ButtonGroup, Flex, Text } from "../.."
-import { getClasses } from "@heliosgraphics/utils"
+import { getClasses } from "@thebeguide/utils"
 import styles from "./MenuCategory.module.css"
 import type { MenuCategoryProps } from "./MenuCategory.types"
 

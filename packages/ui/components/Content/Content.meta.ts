@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ContentBaseProps } from "./Content.types"
 
-export const meta: HeliosAttributeMeta<ContentBaseProps> = {
+export const meta: ThebeAttributeMeta<ContentBaseProps> = {
 	_patterns: [
 		{
 			id: "ui-content-default",

@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import styles from "./InputLabel.module.css"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import type { InputLabelProps } from "./InputLabel.types"
 
 export const InputLabel: FC<InputLabelProps> = ({ id, label, isDisabled, isHidden }) => {

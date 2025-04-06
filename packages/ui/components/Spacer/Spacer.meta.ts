@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { SpacerProps } from "./Spacer.types"
 
-export const meta: HeliosAttributeMeta<SpacerProps> = {
+export const meta: ThebeAttributeMeta<SpacerProps> = {
 	_patterns: [
 		{
 			id: "ui-spacer-default",

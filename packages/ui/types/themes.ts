@@ -1,1 +1,1 @@
-export type HeliosThemes = "dark" | "light" | "system"
+export type ThebeThemes = "dark" | "light" | "system"

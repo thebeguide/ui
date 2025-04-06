@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { RadioProps } from "./Radio.types"
 
-export const meta: HeliosAttributeMeta<RadioProps> = {
+export const meta: ThebeAttributeMeta<RadioProps> = {
 	_patterns: [
 		{
 			id: "ui-radio-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<RadioProps> = {
 	_status: "stable",
 	_category: "core",
 	intent: {
-		type: "HeliosIntentionType",
+		type: "ThebeIntentionType",
 	},
 	isDisabled: {
 		type: "boolean",

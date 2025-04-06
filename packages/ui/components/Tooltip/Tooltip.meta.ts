@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { TooltipProps } from "./Tooltip.types"
 
-export const meta: HeliosAttributeMeta<TooltipProps> = {
+export const meta: ThebeAttributeMeta<TooltipProps> = {
 	_patterns: [
 		{
 			id: "ui-tooltip-default",
@@ -67,7 +67,7 @@ export const meta: HeliosAttributeMeta<TooltipProps> = {
 	_status: "experimental",
 	_category: "core",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	position: {
 		type: "'bottom-center' | 'bottom-left' | 'bottom-right' | 'left-center' | 'right-center' | 'top-center' | 'top-left' | 'top-right'",

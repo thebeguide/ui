@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { NavigationPanelButtonProps } from "./NavigationPanelButton.types"
 
-export const meta: HeliosAttributeMeta<NavigationPanelButtonProps> = {
+export const meta: ThebeAttributeMeta<NavigationPanelButtonProps> = {
 	_patterns: [
 		{
 			id: "ui-navigation-panel-button-default",

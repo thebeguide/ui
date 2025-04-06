@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { IconProps } from "./Icon.types"
 
-export const meta: HeliosAttributeMeta<IconProps> = {
+export const meta: ThebeAttributeMeta<IconProps> = {
 	_patterns: [
 		{
 			id: "ui-icon-default",
@@ -16,10 +16,10 @@ export const meta: HeliosAttributeMeta<IconProps> = {
 		isOptional: true,
 	},
 	icon: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 	},
 	emphasis: {
-		type: "HeliosEmphasisType",
+		type: "ThebeEmphasisType",
 		isOptional: true,
 	},
 	size: {

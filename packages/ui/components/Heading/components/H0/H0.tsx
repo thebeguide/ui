@@ -1,4 +1,4 @@
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import styles from "./H0.module.css"
 import type { FC } from "react"
 import type { H0Props } from "./H0.types"

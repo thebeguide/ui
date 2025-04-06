@@ -1,4 +1,4 @@
-export type HeliosIntentionType =
+export type ThebeIntentionType =
 	| "advise"
 	| "automation"
 	| "confirmation"
@@ -9,4 +9,4 @@ export type HeliosIntentionType =
 	| "success"
 	| "warning"
 
-export type HeliosEmphasisType = "primary" | "secondary" | "tertiary"
+export type ThebeEmphasisType = "primary" | "secondary" | "tertiary"

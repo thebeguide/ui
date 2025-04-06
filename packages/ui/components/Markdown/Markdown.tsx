@@ -1,5 +1,5 @@
 import { md } from "./Markdown.utils"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import styles from "./Markdown.module.css"
 import type { FC } from "react"
 import type { MarkdownProps } from "./Markdown.types"

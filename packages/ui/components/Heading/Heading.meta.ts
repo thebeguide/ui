@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { HeadingBaseProps } from "./Heading.types"
 
-export const meta: HeliosAttributeMeta<HeadingBaseProps> = {
+export const meta: ThebeAttributeMeta<HeadingBaseProps> = {
 	_patterns: [
 		{
 			id: "ui-heading-default",

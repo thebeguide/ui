@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { DatePickerProps } from "./DatePicker.types"
 
-export const meta: HeliosAttributeMeta<DatePickerProps> = {
+export const meta: ThebeAttributeMeta<DatePickerProps> = {
 	_patterns: [
 		{
 			id: "ui-datepicker-default",

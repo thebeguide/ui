@@ -1,13 +1,13 @@
 import type { MouseEvent, MouseEventHandler, SyntheticEvent } from "react"
-import type { HeliosIntentionType, HeliosIconType, HeliosSizeType } from "../.."
+import type { ThebeIntentionType, ThebeIconType, ThebeSizeType } from "../.."
 
 export interface ButtonProps {
 	accept?: string
 	flair?: number
-	icon?: HeliosIconType
-	iconLeft?: HeliosIconType
-	iconRight?: HeliosIconType
-	intent: HeliosIntentionType
+	icon?: ThebeIconType
+	iconLeft?: ThebeIconType
+	iconRight?: ThebeIconType
+	intent: ThebeIntentionType
 	isDisabled?: boolean
 	isIconOnly?: boolean
 	isLoading?: boolean
@@ -15,7 +15,7 @@ export interface ButtonProps {
 	multiple?: boolean
 	onChange?: (event?: MouseEvent | SyntheticEvent) => Promise<void> | void
 	onClick?: MouseEventHandler<HTMLDivElement>
-	size?: HeliosSizeType
+	size?: ThebeSizeType
 	tabIndex?: number
 	type?: "button" | "submit" | "file"
 	value: string

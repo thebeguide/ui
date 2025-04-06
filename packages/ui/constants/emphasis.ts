@@ -1,3 +1,3 @@
-import type { HeliosEmphasisType } from ".."
+import type { ThebeEmphasisType } from ".."
 
-export const EMPHASES: Array<HeliosEmphasisType> = ["primary", "secondary", "tertiary"]
+export const EMPHASES: Array<ThebeEmphasisType> = ["primary", "secondary", "tertiary"]

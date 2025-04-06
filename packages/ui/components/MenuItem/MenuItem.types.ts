@@ -1,10 +1,10 @@
-import type { HeliosColors, HeliosIconType } from "../.."
+import type { ThebeColors, ThebeIconType } from "../.."
 
 export interface MenuItemProps {
 	isActive?: boolean
 	label?: string
-	labelColor?: HeliosColors
+	labelColor?: ThebeColors
 	labelHidden?: boolean
-	labelIcon?: HeliosIconType
+	labelIcon?: ThebeIconType
 	title: string
 }

@@ -1,10 +1,10 @@
 import type { ReactNode } from "react"
-import type { HeliosIconType, HeliosIntentionType } from "../.."
+import type { ThebeIconType, ThebeIntentionType } from "../.."
 
 export interface AlertProps {
 	children: ReactNode
-	icon?: HeliosIconType
-	intent: HeliosIntentionType
+	icon?: ThebeIconType
+	intent: ThebeIntentionType
 	onClose?: (event?: unknown) => void
 	title?: string
 }

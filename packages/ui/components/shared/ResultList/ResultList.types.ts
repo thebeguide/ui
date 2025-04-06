@@ -1,9 +1,9 @@
 import type { Ref, MouseEventHandler } from "react"
-import type { HeliosIconType } from "../../.."
+import type { ThebeIconType } from "../../.."
 
 export interface ResultItem {
 	description?: string
-	icon?: HeliosIconType
+	icon?: ThebeIconType
 	isActive?: boolean
 	isDisabled?: boolean
 	name: string

@@ -2,8 +2,8 @@
 
 import styles from "./Button.module.css"
 import type { ButtonProps } from "./Button.types"
-import { Flex, HeliosIconType, Icon, Loading, Text } from "../.."
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { Flex, ThebeIconType, Icon, Loading, Text } from "../.."
+import { getClasses } from "@thebeguide/utils/classnames"
 import { useId, type MouseEvent, type FC } from "react"
 
 const BUTTON_ICON_SIZE: Record<string, number> = {
@@ -33,8 +33,8 @@ export const Button: FC<ButtonProps> = ({
 }) => {
 	const buttonId = useId()
 	const isIconOnlyLoading: boolean = !!isIconOnly && !!isLoading
-	const localIconLeft: HeliosIconType | undefined = icon || iconLeft
-	const localIconRight: HeliosIconType | undefined = iconRight
+	const localIconLeft: ThebeIconType | undefined = icon || iconLeft
+	const localIconRight: ThebeIconType | undefined = iconRight
 
 	const buttonClasses = getClasses(styles.button, "relative cursor-pointer", {
 		[styles.buttonAdvise]: intent === "advise",

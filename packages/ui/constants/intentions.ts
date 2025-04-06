@@ -1,7 +1,7 @@
-import type { HeliosColors } from "../types/colors"
-import type { HeliosIntentionType } from "../types/intentions"
+import type { ThebeColors } from "../types/colors"
+import type { ThebeIntentionType } from "../types/intentions"
 
-export const INTENTIONS: Array<HeliosIntentionType> = [
+export const INTENTIONS: Array<ThebeIntentionType> = [
 	"advise",
 	"automation",
 	"confirmation",
@@ -13,7 +13,7 @@ export const INTENTIONS: Array<HeliosIntentionType> = [
 	"warning",
 ]
 
-export const INTENTION_COLOR_MAP: Readonly<Record<HeliosIntentionType, HeliosColors>> = {
+export const INTENTION_COLOR_MAP: Readonly<Record<ThebeIntentionType, ThebeColors>> = {
 	advise: "blue",
 	automation: "pink",
 	confirmation: "purple",
@@ -25,7 +25,7 @@ export const INTENTION_COLOR_MAP: Readonly<Record<HeliosIntentionType, HeliosCol
 	warning: "yellow",
 }
 
-export const INTENT_DESCRIPTIONS: Record<HeliosIntentionType, string> = {
+export const INTENT_DESCRIPTIONS: Record<ThebeIntentionType, string> = {
 	advise: "Offer guidance or recommendations based on expertise or experience, allowing for personal choice",
 	automation: "Indicate a process or action that is performed automatically without human intervention",
 	confirmation: "Seek or provide verification of a completed action or decision",

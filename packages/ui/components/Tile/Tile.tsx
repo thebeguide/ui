@@ -1,5 +1,5 @@
 "use client"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { Icon, Text, Flex } from "../.."
 import styles from "./Tile.module.css"
 import { useId, type FC } from "react"

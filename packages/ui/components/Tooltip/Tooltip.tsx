@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef, useEffect, useMemo, useState, FC } from "react"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import styles from "./Tooltip.module.css"
 import type { TooltipProps, TooltipComposition, TooltipContextType } from "./Tooltip.types"
 import { TooltipTrigger } from "./components/TooltipTrigger/TooltipTrigger"

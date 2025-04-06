@@ -1,15 +1,15 @@
 import type { HTMLAttributes, MouseEventHandler, ReactNode } from "react"
-import type { HeliosScale, HeliosRadius } from "../.."
+import type { ThebeScale, ThebeRadius } from "../.."
 import type { RefObject } from "react"
 
-export type ResponsiveScaleType = HeliosScale | [HeliosScale, HeliosScale, HeliosScale]
-export type ResponsiveRadiusType = HeliosRadius | [HeliosRadius, HeliosRadius, HeliosRadius]
+export type ResponsiveScaleType = ThebeScale | [ThebeScale, ThebeScale, ThebeScale]
+export type ResponsiveRadiusType = ThebeRadius | [ThebeRadius, ThebeRadius, ThebeRadius]
 
 export interface FlexBaseProps {
 	children?: ReactNode
 	className?: string
 	elevation?: "small" | "medium" | "large"
-	gap?: HeliosScale
+	gap?: ThebeScale
 	grow?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
 	isAround?: boolean
 	isBetween?: boolean
@@ -24,8 +24,8 @@ export interface FlexBaseProps {
 	isYCentered?: boolean
 	onClick?: MouseEventHandler<HTMLDivElement>
 	padding?: ResponsiveScaleType
-	paddingX?: HeliosScale
-	paddingY?: HeliosScale
+	paddingX?: ThebeScale
+	paddingY?: ThebeScale
 	ref?: RefObject<HTMLDivElement>
 	withBackground?: boolean
 	withRadius?: ResponsiveRadiusType

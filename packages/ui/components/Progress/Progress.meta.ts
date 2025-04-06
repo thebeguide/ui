@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ProgressProps } from "./Progress.types"
 
-export const meta: HeliosAttributeMeta<ProgressProps> = {
+export const meta: ThebeAttributeMeta<ProgressProps> = {
 	_patterns: [
 		{
 			id: "ui-progress-default",

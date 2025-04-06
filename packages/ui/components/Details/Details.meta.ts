@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { DetailsProps } from "./Details.types"
 
-export const meta: HeliosAttributeMeta<DetailsProps> = {
+export const meta: ThebeAttributeMeta<DetailsProps> = {
 	_patterns: [
 		{
 			id: "ui-details-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<DetailsProps> = {
 	_status: "nominal",
 	_category: "core",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	isOpen: {
 		type: "boolean",

@@ -2,13 +2,13 @@ import type {
 	BreadCrumbItem,
 	ButtonGroupProps,
 	DonutSizeType,
-	HeliosColors,
-	HeliosEmphasisType,
-	HeliosIconType,
-	HeliosIntentionType,
-	HeliosPositionType,
-	HeliosScale,
-	HeliosSizeType,
+	ThebeColors,
+	ThebeEmphasisType,
+	ThebeIconType,
+	ThebeIntentionType,
+	ThebePositionType,
+	ThebeScale,
+	ThebeSizeType,
 	PieItem,
 	ResultItem,
 	SelectItem,
@@ -19,19 +19,19 @@ export interface Scope {
 	BUTTONGROUP_ALIGN: ButtonGroupProps["align"]
 	CHECKBOX_LABEL: string
 	CHILDREN: string
-	COLOR: HeliosColors
-	COLOR_ACCENT: HeliosColors
+	COLOR: ThebeColors
+	COLOR_ACCENT: ThebeColors
 	DATE: string
 	DATE_FORMAT: string
 	DONUT_SIZE: DonutSizeType
-	EMPHASIS: HeliosEmphasisType
+	EMPHASIS: ThebeEmphasisType
 	FUNCTION: Function
-	GAP: HeliosScale
+	GAP: ThebeScale
 	HELPER_TEXT: string
-	ICON: HeliosIconType
-	ICON_ACCENT: HeliosIconType
+	ICON: ThebeIconType
+	ICON_ACCENT: ThebeIconType
 	INPUT_LABEL: string
-	INTENT: HeliosIntentionType
+	INTENT: ThebeIntentionType
 	INTENT_PARAGRAPH: string
 	INTENT_TITLE: string
 	IS_ACTIVE: boolean
@@ -53,13 +53,13 @@ export interface Scope {
 	PERCENTAGE: number
 	PIE_ITEMS: Array<PieItem>
 	PILL_LABEL: string
-	POSITION: HeliosPositionType
+	POSITION: ThebePositionType
 	RADIO: string
 	RADIO_LABEL: string
 	RESULT_LIST_ITEMS: Array<ResultItem>
-	SCALE: HeliosScale
+	SCALE: ThebeScale
 	SELECT_ITEMS: Array<SelectItem>
-	SIZE: HeliosSizeType
+	SIZE: ThebeSizeType
 	TAB_ITEMS: Array<string>
 	TAB_SECTIONS: Array<unknown>
 	TEXTAREA: string

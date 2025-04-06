@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { FlexBaseProps } from "./Flex.types"
 
-export const meta: HeliosAttributeMeta<FlexBaseProps> = {
+export const meta: ThebeAttributeMeta<FlexBaseProps> = {
 	_patterns: [
 		{
 			id: "ui-flex-default",
@@ -17,9 +17,9 @@ export const meta: HeliosAttributeMeta<FlexBaseProps> = {
 	_status: "stable",
 	_category: "core",
 	_extends: ['Omit<HTMLAttributes<HTMLDivElement>, "color" | "results">'],
-	children: { type: "HeliosChildrenType", isOptional: true },
+	children: { type: "ReactNode", isOptional: true },
 	className: { type: "string", isOptional: true },
-	gap: { type: "HeliosScale", isOptional: true },
+	gap: { type: "ThebeScale", isOptional: true },
 	grow: { type: "1 | 2 | 3 | 4 | 5 | 6 | 7 | 8", isOptional: true },
 	elevation: { type: '"small" | "medium" | "large"', isOptional: true },
 	isAround: { type: "boolean", isOptional: true },
@@ -33,10 +33,10 @@ export const meta: HeliosAttributeMeta<FlexBaseProps> = {
 	isWrapping: { type: "boolean", isOptional: true },
 	isXCentered: { type: "boolean", isOptional: true },
 	isYCentered: { type: "boolean", isOptional: true },
-	onClick: { type: "HeliosOnClickType", isOptional: true },
+	onClick: { type: "ThebeOnClickType", isOptional: true },
 	padding: { type: "ResponsiveScaleType", isOptional: true },
-	paddingX: { type: "HeliosScale", isOptional: true },
-	paddingY: { type: "HeliosScale", isOptional: true },
+	paddingX: { type: "ThebeScale", isOptional: true },
+	paddingY: { type: "ThebeScale", isOptional: true },
 	ref: { type: "RefObject<HTMLDivElement>", isOptional: true },
 	withBackground: { type: "boolean", isOptional: true },
 	withRadius: { type: "ResponsiveRadiusType", isOptional: true },

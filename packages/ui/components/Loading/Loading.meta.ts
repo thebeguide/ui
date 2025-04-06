@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { LoadingProps } from "./Loading.types"
 
-export const meta: HeliosAttributeMeta<LoadingProps> = {
+export const meta: ThebeAttributeMeta<LoadingProps> = {
 	_patterns: [
 		{
 			id: "ui-loading-default",
@@ -14,7 +14,7 @@ export const meta: HeliosAttributeMeta<LoadingProps> = {
 	className: { type: "string", isOptional: true },
 	size: { type: "10 | 20 | 40" },
 	emphasis: {
-		type: "HeliosEmphasisType",
+		type: "ThebeEmphasisType",
 		isOptional: true,
 	},
 }

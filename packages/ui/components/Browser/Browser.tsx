@@ -1,4 +1,4 @@
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import styles from "./Browser.module.css"
 import type { BrowserProps } from "./Browser.types"
 import type { FC } from "react"

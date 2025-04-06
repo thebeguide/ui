@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { DotProps } from "./Dot.types"
 
-export const meta: HeliosAttributeMeta<DotProps> = {
+export const meta: ThebeAttributeMeta<DotProps> = {
 	_patterns: [
 		{
 			id: "ui-dot-default",
@@ -17,15 +17,15 @@ export const meta: HeliosAttributeMeta<DotProps> = {
 	_status: "stable",
 	_category: "core",
 	color: {
-		type: "HeliosColors",
+		type: "ThebeColors",
 		default: "blue",
 	},
 	colorAccent: {
-		type: "HeliosColors",
+		type: "ThebeColors",
 		isOptional: true,
 	},
 	size: {
-		type: "HeliosScale",
+		type: "ThebeScale",
 		default: 8,
 	},
 }

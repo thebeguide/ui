@@ -1,7 +1,7 @@
 import styles from "./SegmentButton.module.css"
 import type { SegmentButtonProps } from "./SegmentButton.types"
 import { FC } from "react"
-import { getClasses } from "@heliosgraphics/utils"
+import { getClasses } from "@thebeguide/utils"
 
 export const SegmentButton: FC<SegmentButtonProps> = ({ isActive, title, onClick }) => {
 	const segmentButtonClasses: string = getClasses(styles.segmentButton, {

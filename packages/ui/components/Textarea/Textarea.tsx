@@ -1,6 +1,6 @@
 "use client"
 
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { Text } from "../.."
 import { useId, useRef, useEffect } from "react"
 import { InputLabel } from "../shared/InputLabel/InputLabel"

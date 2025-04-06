@@ -1,8 +1,8 @@
-import type { HeliosIconType, HeliosEmphasisType } from "../.."
+import type { ThebeIconType, ThebeEmphasisType } from "../.."
 
 export interface IconProps {
 	className?: string
-	icon: HeliosIconType
-	emphasis?: HeliosEmphasisType
+	icon: ThebeIconType
+	emphasis?: ThebeEmphasisType
 	size: number
 }

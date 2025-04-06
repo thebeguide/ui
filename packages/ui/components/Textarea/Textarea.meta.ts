@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { TextareaProps } from "./Textarea.types"
 
-export const meta: HeliosAttributeMeta<TextareaProps> = {
+export const meta: ThebeAttributeMeta<TextareaProps> = {
 	_patterns: [
 		{
 			id: "ui-textarea-default",

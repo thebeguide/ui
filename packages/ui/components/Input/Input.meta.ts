@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { InputProps } from "./Input.types"
 
-export const meta: HeliosAttributeMeta<InputProps> = {
+export const meta: ThebeAttributeMeta<InputProps> = {
 	_patterns: [
 		{
 			id: "ui-input-default",
@@ -25,7 +25,7 @@ export const meta: HeliosAttributeMeta<InputProps> = {
 	name: { type: "string", isOptional: true },
 	onBlur: { type: "(event?: FocusEvent<HTMLInputElement>) => unknown", isOptional: true },
 	onChange: { type: "(event?: ChangeEvent<HTMLInputElement>) => unknown", isOptional: true },
-	onClear: { type: "HeliosOnClickType", isOptional: true },
+	onClear: { type: "ThebeOnClickType", isOptional: true },
 	onFocus: { type: "(event?: FocusEvent<HTMLInputElement>) => unknown", isOptional: true },
 	onKeyDown: { type: "(event?: KeyboardEvent) => unknown", isOptional: true },
 	onKeyUp: { type: "string", isOptional: true },

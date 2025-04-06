@@ -1,33 +1,33 @@
 import {
 	COMPONENTS,
-	type HeliosComponentStatusType,
-	type HeliosComponentCategoryType,
-	type HeliosColors,
-	type HeliosIconType,
+	type ThebeComponentStatusType,
+	type ThebeComponentCategoryType,
+	type ThebeColors,
+	type ThebeIconType,
 } from ".."
 
-export const STATUS_COLORS: Record<HeliosComponentStatusType, HeliosColors> = {
+export const STATUS_COLORS: Record<ThebeComponentStatusType, ThebeColors> = {
 	experimental: "pink",
 	nominal: "gray",
 	stable: "green",
 	internal: "gray",
 }
 
-export const STATUS_ICONS: Record<HeliosComponentStatusType, HeliosIconType> = {
+export const STATUS_ICONS: Record<ThebeComponentStatusType, ThebeIconType> = {
 	experimental: "bolt",
 	nominal: "bolt",
 	stable: "check",
 	internal: "bullseye",
 }
 
-export const STATUS_NAMES: Record<HeliosComponentStatusType, string> = {
+export const STATUS_NAMES: Record<ThebeComponentStatusType, string> = {
 	experimental: "Experimental",
 	nominal: "Might Change",
 	stable: "Stable",
 	internal: "Internal",
 }
 
-export const TYPE_NAMES: Record<HeliosComponentCategoryType, string> = {
+export const TYPE_NAMES: Record<ThebeComponentCategoryType, string> = {
 	content: "Content",
 	pattern: "Pattern",
 	core: "Core",
@@ -35,10 +35,10 @@ export const TYPE_NAMES: Record<HeliosComponentCategoryType, string> = {
 }
 
 interface StatusReturnType {
-	color: HeliosColors
-	icon: HeliosIconType
+	color: ThebeColors
+	icon: ThebeIconType
 	name: string
-	status: HeliosComponentStatusType
+	status: ThebeComponentStatusType
 }
 
 export const getStatus = (component: string = "Example"): StatusReturnType => {

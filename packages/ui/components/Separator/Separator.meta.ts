@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { SeparatorProps } from "./Separator.types"
 
-export const meta: HeliosAttributeMeta<SeparatorProps> = {
+export const meta: ThebeAttributeMeta<SeparatorProps> = {
 	_patterns: [
 		{
 			id: "ui-separator-default",

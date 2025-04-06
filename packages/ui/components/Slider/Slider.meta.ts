@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { SliderProps } from "./Slider.types"
 
-export const meta: HeliosAttributeMeta<SliderProps> = {
+export const meta: ThebeAttributeMeta<SliderProps> = {
 	_patterns: [
 		{
 			id: "ui-slider-default",

@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { GridProps } from "./Grid.types"
 
-export const meta: HeliosAttributeMeta<GridProps> = {
+export const meta: ThebeAttributeMeta<GridProps> = {
 	_patterns: [
 		{
 			id: "ui-grid-default",
@@ -15,7 +15,7 @@ export const meta: HeliosAttributeMeta<GridProps> = {
 		type: "number",
 	},
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	isResponsive: {
 		type: "boolean",

@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { OverlayProps } from "./Overlay.types"
 
-export const meta: HeliosAttributeMeta<OverlayProps> = {
+export const meta: ThebeAttributeMeta<OverlayProps> = {
 	_patterns: [
 		{
 			id: "ui-overlay-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<OverlayProps> = {
 	_status: "stable",
 	_category: "core",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	isCentered: {
 		type: "boolean",

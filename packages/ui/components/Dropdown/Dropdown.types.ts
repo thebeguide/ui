@@ -1,4 +1,4 @@
-import type { ResultItem, HeliosPositionType } from "../.."
+import type { ResultItem, ThebePositionType } from "../.."
 import type { ReactElement } from "react"
 
 export interface DropdownProps {
@@ -6,5 +6,5 @@ export interface DropdownProps {
 	items: Array<ResultItem>
 	isHidden?: boolean
 	isDisabled?: boolean
-	position?: HeliosPositionType
+	position?: ThebePositionType
 }

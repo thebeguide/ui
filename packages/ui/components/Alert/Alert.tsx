@@ -1,5 +1,5 @@
 import { Button, ButtonGroup, Flex, Text, Icon } from "../.."
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import styles from "./Alert.module.css"
 import type { AlertProps } from "./Alert.types"
 import type { FC } from "react"

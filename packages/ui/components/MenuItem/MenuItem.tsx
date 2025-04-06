@@ -2,7 +2,7 @@
 
 import { FC } from "react"
 import { Flex, Pill, Text } from "../.."
-import { getClasses } from "@heliosgraphics/utils"
+import { getClasses } from "@thebeguide/utils"
 import styles from "./MenuItem.module.css"
 import type { MenuItemProps } from "./MenuItem.types"
 

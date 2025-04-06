@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { MenuItemProps } from "./MenuItem.types"
 
-export const meta: HeliosAttributeMeta<MenuItemProps> = {
+export const meta: ThebeAttributeMeta<MenuItemProps> = {
 	_patterns: [
 		{
 			id: "ui-menu-item-default",
@@ -20,7 +20,7 @@ export const meta: HeliosAttributeMeta<MenuItemProps> = {
 		isOptional: true,
 	},
 	labelColor: {
-		type: "HeliosColors",
+		type: "ThebeColors",
 		isOptional: true,
 		default: "aqua",
 	},
@@ -29,7 +29,7 @@ export const meta: HeliosAttributeMeta<MenuItemProps> = {
 		isOptional: true,
 	},
 	labelIcon: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 		isOptional: true,
 	},
 	title: {

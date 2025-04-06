@@ -26,12 +26,5 @@
 	"keywords": [
 		"CSS",
 		"Atomic CSS"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/heliosgraphics/fractures"
-	},
-	"bugs": {
-		"url": "https://github.com/heliosgraphics/fractures/issues"
-	}
+	]
 }

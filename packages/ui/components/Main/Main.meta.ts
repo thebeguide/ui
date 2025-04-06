@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { MainProps } from "./Main.types"
 
-export const meta: HeliosAttributeMeta<MainProps> = {
+export const meta: ThebeAttributeMeta<MainProps> = {
 	_patterns: [
 		{
 			id: "ui-main-default",
@@ -11,5 +11,5 @@ export const meta: HeliosAttributeMeta<MainProps> = {
 	],
 	_status: "nominal",
 	_category: "layout",
-	children: { type: "HeliosChildrenType" },
+	children: { type: "ReactNode" },
 }

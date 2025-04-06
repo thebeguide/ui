@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { PillProps } from "./Pill.types"
 
-export const meta: HeliosAttributeMeta<PillProps> = {
+export const meta: ThebeAttributeMeta<PillProps> = {
 	_patterns: [
 		{
 			id: "ui-pill-default",
@@ -12,15 +12,15 @@ export const meta: HeliosAttributeMeta<PillProps> = {
 	_status: "stable",
 	_category: "core",
 	color: {
-		type: "HeliosColors",
+		type: "ThebeColors",
 		default: "gray",
 	},
 	icon: {
-		type: "HeliosIconType",
+		type: "ThebeIconType",
 		isOptional: true,
 	},
 	isDark: {
-		type: "HeliosIntentionType",
+		type: "ThebeIntentionType",
 		isOptional: true,
 	},
 	isLabelHidden: {
@@ -36,7 +36,7 @@ export const meta: HeliosAttributeMeta<PillProps> = {
 		isOptional: true,
 	},
 	onClick: {
-		type: "HeliosOnClickType",
+		type: "ThebeOnClickType",
 		isOptional: true,
 	},
 	label: {
@@ -44,7 +44,7 @@ export const meta: HeliosAttributeMeta<PillProps> = {
 		isOptional: true,
 	},
 	size: {
-		type: "HeliosSizeType",
+		type: "ThebeSizeType",
 		isOptional: true,
 		default: "normal",
 	},

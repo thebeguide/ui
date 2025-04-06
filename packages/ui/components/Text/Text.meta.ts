@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { TextBaseProps } from "./Text.types"
 
-export const meta: HeliosAttributeMeta<TextBaseProps> = {
+export const meta: ThebeAttributeMeta<TextBaseProps> = {
 	_patterns: [
 		{
 			id: "ui-text-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<TextBaseProps> = {
 	_status: "stable",
 	_category: "content",
 	_extends: ["HTMLAttributes<HTMLDivElement | HTMLParagraphElement>"],
-	emphasis: { type: "HeliosEmphasisType", isOptional: true },
+	emphasis: { type: "ThebeEmphasisType", isOptional: true },
 	fontFamily: { type: '"sans" | "serif" | "mono"', isOptional: true },
 	fontStyle: { type: '"italic" | "normal" | "oblique"', isOptional: true },
 	fontWeight: {

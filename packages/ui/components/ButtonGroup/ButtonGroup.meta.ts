@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { ButtonGroupProps } from "./ButtonGroup.types"
 
-export const meta: HeliosAttributeMeta<ButtonGroupProps> = {
+export const meta: ThebeAttributeMeta<ButtonGroupProps> = {
 	_patterns: [
 		{
 			id: "ui-actions-submit",
@@ -22,7 +22,7 @@ export const meta: HeliosAttributeMeta<ButtonGroupProps> = {
 		isOptional: true,
 	},
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	isVertical: {
 		type: "boolean",

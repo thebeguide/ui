@@ -1,5 +1,5 @@
 import { Div } from "./components/Div/Div"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { getTypographyUtility } from "./Text.utils"
 import { P } from "./components/P/P"
 import { Small } from "./components/Small/Small"

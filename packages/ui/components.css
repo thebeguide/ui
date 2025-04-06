@@ -299,32 +299,32 @@ mark,
 }
 
 /* helpers: background */
-.helios-ui-bg {
+.thebe-ui-bg {
 	background-color: var(--ui-bg);
 }
 
 /* helpers: background / glass */
-.helios-ui-glass-1 {
+.thebe-ui-glass-1 {
 	background-color: var(--ui-bg-glass-1);
 	backdrop-filter: blur(3px);
 }
 
 /* helpers: scrollbar */
-.helios-scrollbar::-webkit-scrollbar {
+.thebe-scrollbar::-webkit-scrollbar {
 	height: 10px;
 	width: 10px;
 }
 
-.helios-scrollbar--narrow::-webkit-scrollbar {
+.thebe-scrollbar--narrow::-webkit-scrollbar {
 	height: 6px;
 	width: 6px;
 }
 
-.helios-scrollbar::-webkit-scrollbar-corner {
+.thebe-scrollbar::-webkit-scrollbar-corner {
 	background-color: var(--ui-bg-disabled);
 }
 
-.helios-scrollbar::-webkit-scrollbar-thumb {
+.thebe-scrollbar::-webkit-scrollbar-thumb {
 	background-color: var(--ui-bg);
 	border-left: 1px solid var(--ui-border-light);
 	border-right: 1px solid var(--ui-border-light);
@@ -332,15 +332,15 @@ mark,
 	transition: all var(--animation-fastest) var(--ease-in-out);
 }
 
-.helios-scrollbar::-webkit-scrollbar-track {
+.thebe-scrollbar::-webkit-scrollbar-track {
 	background-color: var(--ui-bg-soft);
 }
 
-.helios-scrollbar::-webkit-scrollbar-thumb:hover {
+.thebe-scrollbar::-webkit-scrollbar-thumb:hover {
 	background-color: var(--ui-bg);
 }
 
-.helios-scrollbar::-webkit-scrollbar-thumb:active {
+.thebe-scrollbar::-webkit-scrollbar-thumb:active {
 	background-color: var(--ui-bg-disabled);
 }
 

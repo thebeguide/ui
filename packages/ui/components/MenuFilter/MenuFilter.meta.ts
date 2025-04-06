@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { MenuFilterProps } from "./MenuFilter.types"
 
-export const meta: HeliosAttributeMeta<MenuFilterProps> = {
+export const meta: ThebeAttributeMeta<MenuFilterProps> = {
 	_patterns: [
 		{
 			id: "ui-menu-filter-default",
@@ -15,7 +15,7 @@ export const meta: HeliosAttributeMeta<MenuFilterProps> = {
 		type: "(event?: ChangeEvent<HTMLInputElement>) => void",
 	},
 	onClear: {
-		type: "HeliosOnClickType",
+		type: "ThebeOnClickType",
 		isOptional: true,
 	},
 	value: {

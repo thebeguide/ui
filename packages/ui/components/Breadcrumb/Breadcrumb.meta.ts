@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { BreadcrumbProps } from "./Breadcrumb.types"
 
-export const meta: HeliosAttributeMeta<BreadcrumbProps> = {
+export const meta: ThebeAttributeMeta<BreadcrumbProps> = {
 	_patterns: [
 		{
 			id: "ui-breadcrumb-default",

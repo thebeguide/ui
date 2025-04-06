@@ -1,7 +1,7 @@
 import styles from "./Overlay.module.css"
 import type { FC, MouseEvent } from "react"
 import type { OverlayProps } from "./Overlay.types"
-import { getClasses } from "@heliosgraphics/utils"
+import { getClasses } from "@thebeguide/utils"
 
 export const Overlay: FC<OverlayProps> = ({ onClose, isCentered, children, isOpen }) => {
 	if (!isOpen) return null

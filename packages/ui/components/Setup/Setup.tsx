@@ -1,30 +1,30 @@
 import type { FC } from "react"
-import type { HeliosThemes } from "../../types/themes"
+import type { ThebeThemes } from "../../types/themes"
 import type { SetupLinkProps, SetupProps } from "./Setup.types"
 
 declare global {
 	interface Window {
-		__theme: HeliosThemes
-		__onThemeChange: ((theme: HeliosThemes) => void) | undefined
-		__setPreferredTheme: (theme: HeliosThemes) => void
+		__theme: ThebeThemes
+		__onThemeChange: ((theme: ThebeThemes) => void) | undefined
+		__setPreferredTheme: (theme: ThebeThemes) => void
 	}
 
-	var __theme: HeliosThemes
-	var __onThemeChange: ((theme: HeliosThemes) => void) | undefined
-	var __setPreferredTheme: (theme: HeliosThemes) => void
+	var __theme: ThebeThemes
+	var __onThemeChange: ((theme: ThebeThemes) => void) | undefined
+	var __setPreferredTheme: (theme: ThebeThemes) => void
 }
 
 const code = (): void => {
-	globalThis.__onThemeChange = function (_theme: HeliosThemes): void {}
+	globalThis.__onThemeChange = function (_theme: ThebeThemes): void {}
 
-	const setTheme = (newTheme: HeliosThemes): void => {
+	const setTheme = (newTheme: ThebeThemes): void => {
 		globalThis.__theme = newTheme
 		preferredTheme = newTheme
 		document.documentElement.dataset.theme = newTheme
 		globalThis.__onThemeChange?.(newTheme)
 	}
 
-	let preferredTheme: HeliosThemes | undefined
+	let preferredTheme: ThebeThemes | undefined
 	const darkQuery: MediaQueryList = globalThis.matchMedia("(prefers-color-scheme: dark)")
 
 	try {
@@ -36,7 +36,7 @@ const code = (): void => {
 		console.error("failed to read theme from localStorage:", error)
 	}
 
-	globalThis.__setPreferredTheme = function (newTheme: HeliosThemes): void {
+	globalThis.__setPreferredTheme = function (newTheme: ThebeThemes): void {
 		try {
 			setTheme(newTheme)
 			localStorage.setItem("theme", newTheme)

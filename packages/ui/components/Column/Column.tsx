@@ -1,5 +1,5 @@
 import { getFlexUtility, getSafeFlexProps } from "../Flex/Flex.utils"
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import type { ColumnProps } from "./Column.types"
 import type { FC } from "react"
 

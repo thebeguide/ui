@@ -1,10 +1,10 @@
-import { getClasses } from "@heliosgraphics/utils/classnames"
-import { Flex, Text, HeliosSizeType, Icon } from "../.."
+import { getClasses } from "@thebeguide/utils/classnames"
+import { Flex, Text, ThebeSizeType, Icon } from "../.."
 import styles from "./Pill.module.css"
 import type { FC } from "react"
 import type { PillProps } from "./Pill.types"
 
-const PILL_ICON_SIZES: Record<HeliosSizeType, number> = {
+const PILL_ICON_SIZES: Record<ThebeSizeType, number> = {
 	normal: 24,
 	small: 16,
 	tiny: 12,

@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { TimestampProps } from "./Timestamp.types"
 
-export const meta: HeliosAttributeMeta<TimestampProps> = {
+export const meta: ThebeAttributeMeta<TimestampProps> = {
 	_patterns: [
 		{
 			id: "ui-timestamp-default",

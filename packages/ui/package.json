@@ -1,10 +1,10 @@
 {
 	"name": "@thebeguide/ui",
-	"version": "2.0.0-alpha.7",
+	"version": "2.0.0-alpha.8",
 	"type": "module",
 	"author": "03b8 <03b8@helios.graphics>",
 	"private": false,
-	"description": "Helios User Interface",
+	"description": "Thebe UI",
 	"main": "./index.ts",
 	"files": [
 		"components/**/*.*",
@@ -26,9 +26,9 @@
 		"prettier:write": "prettier --no-semi --use-tabs --write ./src/**"
 	},
 	"dependencies": {
-		"@heliosgraphics/fractures": "^6.3.3",
-		"@heliosgraphics/icons": "^0.1.2",
-		"@heliosgraphics/utils": "^5.3.13",
+		"@thebeguide/fractures": "7.0.0-alpha.1",
+		"@thebeguide/icons": "1.0.0-alpha.1",
+		"@thebeguide/utils": "6.0.0-alpha.1",
 		"@types/markdown-it": "^14.1.2",
 		"@use-gesture/react": "^10.3.1",
 		"dayjs": "^1.11.13",

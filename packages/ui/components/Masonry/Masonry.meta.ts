@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { MasonryProps } from "./Masonry.types"
 
-export const meta: HeliosAttributeMeta<MasonryProps> = {
+export const meta: ThebeAttributeMeta<MasonryProps> = {
 	_patterns: [
 		{
 			id: "ui-masonry-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<MasonryProps> = {
 	_status: "experimental",
 	_category: "layout",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 	brakepoints: {
 		type: "[number, number, number]",

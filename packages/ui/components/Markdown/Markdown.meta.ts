@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { MarkdownProps } from "./Markdown.types"
 
-export const meta: HeliosAttributeMeta<MarkdownProps> = {
+export const meta: ThebeAttributeMeta<MarkdownProps> = {
 	_patterns: [
 		{
 			id: "ui-markdown-default",

@@ -3,7 +3,7 @@
 import { useEffect, useRef, type FC, MouseEvent } from "react"
 import styles from "./Dialog.module.css"
 import { Button, ButtonGroup, Heading, Flex } from "../.."
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import type { DialogProps } from "./Dialog.types"
 
 const ATTRIBUTE_SCROLL = "data-scroll" as const
@@ -68,11 +68,11 @@ export const Dialog: FC<DialogProps> = ({ title, children, isNarrow, isOpen, isC
 		return isDialog && onClose()
 	}
 
-	const dialogClasses: string = getClasses(styles.dialog, "helios-scrollbar", "elevation-large", {
+	const dialogClasses: string = getClasses(styles.dialog, "thebe-scrollbar", "elevation-large", {
 		[styles.dialogCentered]: isCentered,
 		[styles.dialogNarrow]: isNarrow,
 	})
-	const dialogFlexClasses: string = getClasses(styles.dialog__header, "sticky top-0 z-50 helios-ui-glass-1")
+	const dialogFlexClasses: string = getClasses(styles.dialog__header, "sticky top-0 z-50 thebe-ui-glass-1")
 	const dialogContentClasses: string = getClasses(styles.dialog__content, {
 		[styles.dialog__contentNoPadding]: noPadding,
 	})

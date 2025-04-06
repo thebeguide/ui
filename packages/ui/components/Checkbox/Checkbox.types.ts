@@ -1,9 +1,9 @@
 import type { ChangeEventHandler } from "react"
-import { HeliosIntentionType } from "../.."
+import { ThebeIntentionType } from "../.."
 
 export interface BaseCheckboxProps {
 	description?: string
-	intent: HeliosIntentionType
+	intent: ThebeIntentionType
 	isChecked?: boolean
 	isDisabled?: boolean
 	isLabelHidden?: boolean

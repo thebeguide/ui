@@ -1,13 +1,3 @@
-import type { HeliosColors } from ".."
+import type { ThebeColors } from ".."
 
-export const COLORS: Array<HeliosColors> = [
-	"aqua",
-	"blue",
-	"gray",
-	"green",
-	"orange",
-	"pink",
-	"purple",
-	"red",
-	"yellow",
-]
+export const COLORS: Array<ThebeColors> = ["aqua", "blue", "gray", "green", "orange", "pink", "purple", "red", "yellow"]

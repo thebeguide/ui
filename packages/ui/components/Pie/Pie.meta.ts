@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { PieProps } from "./Pie.types"
 
-export const meta: HeliosAttributeMeta<PieProps> = {
+export const meta: ThebeAttributeMeta<PieProps> = {
 	_patterns: [
 		{
 			id: "ui-pie-default",
@@ -12,7 +12,7 @@ export const meta: HeliosAttributeMeta<PieProps> = {
 	_status: "experimental",
 	_category: "core",
 	color: {
-		type: "HeliosColors",
+		type: "ThebeColors",
 	},
 	data: {
 		type: "Array<PieItem>",

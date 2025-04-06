@@ -1,1 +1,1 @@
-export { meta as ICONS } from "@heliosgraphics/icons/meta"
+export { meta as ICONS } from "@thebeguide/icons/meta"

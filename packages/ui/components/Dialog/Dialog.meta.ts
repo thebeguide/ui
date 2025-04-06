@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { DialogProps } from "./Dialog.types"
 
-export const meta: HeliosAttributeMeta<DialogProps> = {
+export const meta: ThebeAttributeMeta<DialogProps> = {
 	_patterns: [
 		{
 			id: "ui-dialog-default",

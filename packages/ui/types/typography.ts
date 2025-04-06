@@ -1,1 +1,1 @@
-export type HeliosFontFamilyTypes = "sans" | "serif" | "mono"
+export type ThebeFontFamilyTypes = "sans" | "serif" | "mono"

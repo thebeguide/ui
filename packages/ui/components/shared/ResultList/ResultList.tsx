@@ -1,4 +1,4 @@
-import { getClasses } from "@heliosgraphics/utils/classnames"
+import { getClasses } from "@thebeguide/utils/classnames"
 import { Checkbox, Flex, Icon, Text } from "../../.."
 import styles from "./ResultList.module.css"
 import { forwardRef } from "react"

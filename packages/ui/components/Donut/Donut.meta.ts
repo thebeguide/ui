@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { DonutProps } from "./Donut.types"
 
-export const meta: HeliosAttributeMeta<DonutProps> = {
+export const meta: ThebeAttributeMeta<DonutProps> = {
 	_patterns: [
 		{
 			id: "ui-donut-default",
@@ -12,11 +12,11 @@ export const meta: HeliosAttributeMeta<DonutProps> = {
 	_status: "stable",
 	_category: "core",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 		isOptional: true,
 	},
 	color: {
-		type: "HeliosColors",
+		type: "ThebeColors",
 	},
 	percentage: {
 		type: "number",

@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { MenuProps } from "./Menu.types"
 
-export const meta: HeliosAttributeMeta<MenuProps> = {
+export const meta: ThebeAttributeMeta<MenuProps> = {
 	_patterns: [
 		{
 			id: "ui-menu-default",
@@ -12,6 +12,6 @@ export const meta: HeliosAttributeMeta<MenuProps> = {
 	_status: "experimental",
 	_category: "layout",
 	children: {
-		type: "HeliosChildrenType",
+		type: "ReactNode",
 	},
 }

@@ -1,7 +1,7 @@
-import type { HeliosAttributeMeta } from "../.."
+import type { ThebeAttributeMeta } from "../.."
 import type { TileProps } from "./Tile.types"
 
-export const meta: HeliosAttributeMeta<TileProps> = {
+export const meta: ThebeAttributeMeta<TileProps> = {
 	_patterns: [
 		{
 			id: "ui-tile-default",
@@ -11,13 +11,13 @@ export const meta: HeliosAttributeMeta<TileProps> = {
 	],
 	_status: "stable",
 	_category: "pattern",
-	color: { type: "HeliosColors" },
-	colorAccent: { type: "HeliosColors", isOptional: true },
-	icon: { type: "HeliosIconType" },
-	iconAccent: { type: "HeliosIconType", isOptional: true },
+	color: { type: "ThebeColors" },
+	colorAccent: { type: "ThebeColors", isOptional: true },
+	icon: { type: "ThebeIconType" },
+	iconAccent: { type: "ThebeIconType", isOptional: true },
 	isRound: { type: "boolean", isOptional: true },
 	isRounded: { type: "boolean", isOptional: true },
-	onClick: { type: "HeliosOnClickType", isOptional: true },
+	onClick: { type: "ThebeOnClickType", isOptional: true },
 	size: { type: "number" },
 	text: { type: "string", isOptional: true },
 }
