@@ -1,3 +1,5 @@
+"use client"
+
 import { getClasses } from "@heliosgraphics/utils/classnames"
 import styles from "./Radio.module.css"
 import { Text } from "../.."

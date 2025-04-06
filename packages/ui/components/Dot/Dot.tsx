@@ -1,3 +1,5 @@
+"use client"
+
 import { useId } from "react"
 import styles from "./Dot.module.css"
 import type { DotProps } from "./Dot.types"

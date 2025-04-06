@@ -1,6 +1,7 @@
-import { build, type BuildOptions, type Loader } from "esbuild"
+import { build, type BuildOptions } from "esbuild"
 import { mkdir, rm, cp, readFile, writeFile } from "fs/promises"
 import { execSync } from "child_process"
+import cssModulesPlugin from "esbuild-css-modules-plugin"
 
 const setup = async (): Promise<void> => {
 	await rm("dist", { recursive: true, force: true })
@@ -12,18 +13,15 @@ const setup = async (): Promise<void> => {
 		target: "esnext",
 		bundle: true,
 		sourcemap: true,
-		external: [
-			"react",
-			"react-dom",
-			"react/jsx-runtime",
-			"dayjs",
-			"markdown-it",
-			"highlight.js",
-			"@use-gesture/react",
-			"react-plock",
-			"@heliosgraphics/*",
+		metafile: true,
+		external: ["react", "react/jsx-runtime", "react-dom", "react-dom/client", "@heliosgraphics/*"],
+		plugins: [
+			cssModulesPlugin({
+				inject: true,
+				localsConvention: "camelCaseOnly",
+				pattern: "[name]_[local]",
+			}),
 		],
-		loader: { ".css": "empty" as Loader },
 		minify: true,
 		treeShaking: true,
 		allowOverwrite: true,
@@ -63,6 +61,10 @@ const setup = async (): Promise<void> => {
 	})
 
 	await writeFile("dist/components.css", minifiedCss.outputFiles[0].contents)
+
+	// Only process index.js
+	const content = await readFile("dist/index.js", "utf8")
+	await writeFile("dist/index.js", `"use client";\n${content}`)
 
 	execSync("tsc --declaration --emitDeclarationOnly --outDir dist", {
 		stdio: "inherit",

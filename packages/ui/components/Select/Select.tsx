@@ -1,3 +1,5 @@
+"use client"
+
 import { Flex, Icon } from "../.."
 import { getClasses } from "@heliosgraphics/utils/classnames"
 import { useId, type FC } from "react"

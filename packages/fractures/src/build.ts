@@ -13,7 +13,7 @@ writeFile("dist/fractures.easings.css", easings)
 // generates the default bundle
 generateOutput(FRACTURE_FILES, reset, "dist/fractures.min.css")
 
-// generates set of files, eg.: `@heliosgraphics/fractures/dist/set/flex.css`
+// generates set of files, eg.: `@thebeguide/fractures/dist/set/flex.css`
 Object.entries(FRACTURE_FILES).forEach((rules) => {
 	generateOutput(rules[1], "", `dist/set/${rules[0]}.css`)
 })

@@ -1,3 +1,5 @@
+"use client"
+
 import { useId, type FC } from "react"
 import { getClasses } from "@heliosgraphics/utils/classnames"
 import { Button, ButtonGroup, Loading, Text, Flex } from "../.."

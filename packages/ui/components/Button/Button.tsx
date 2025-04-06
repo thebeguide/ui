@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./Button.module.css"
 import type { ButtonProps } from "./Button.types"
 import { Flex, HeliosIconType, Icon, Loading, Text } from "../.."

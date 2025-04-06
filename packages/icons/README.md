@@ -1,3 +1,3 @@
 # icons
 
-`npm add @heliosgraphics/icons`
+`npm add @thebeguide/icons`

@@ -1,3 +1,4 @@
+"use client"
 import { getClasses } from "@heliosgraphics/utils/classnames"
 import { Icon, Text, Flex } from "../.."
 import styles from "./Tile.module.css"
